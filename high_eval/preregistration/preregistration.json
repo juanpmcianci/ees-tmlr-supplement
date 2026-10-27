@@ -1,0 +1,403 @@
+{
+ "campaign_env": [],
+ "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+ "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+ "denominator": 11,
+ "lane": "eval",
+ "llm": {
+  "model": "gpt-6-luna",
+  "provider": "openai"
+ },
+ "prior": {
+  "kind": "method-only (eval-safe): strategy notes, no rated outcomes",
+  "manifest_sha256": "87036fb44c71ee482be302b4c3b08e92876067ec5fbf1f1c900b68c42ba2e202",
+  "uri": "<redacted-storage>/medium-medal/priors/method-eval-safe/87036fb4/method-prior-eval-safe-7231983f/"
+ },
+ "rule": "Three seeds per task, launched once each from the frozen tag; every one of them is reported, whatever it scores, and a task that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause (capacity, quota, disk, credentials, a cloud outage) before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch; the first attempt's evidence is kept. Nothing is salvaged, re-finalised or scored by hand. No score is read before every campaign of the seed is terminal. Results labelled as a data property are reported in their own row and are not added to the model-driven count.",
+ "schema": "eval-run-preregistration-v1",
+ "seeds": [
+  101,
+  202,
+  303
+ ],
+ "tag": "eval-release",
+ "tasks": [
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/iwildcam-2019-fgvc6/private.tar.gz",
+   "answers_version": "YMk3QWJx1J1C_PxnLrFhf.18fzNUexBU",
+   "box": "staging",
+   "budget_seconds": 10800,
+   "campaigns": {
+    "101": {
+     "campaign_id": "longtail-eval-release-s101",
+     "launch_line_sha256": "ec185117d3037e75ca9c0820e54bd293a24d93cbdba98d356dbe581e37f15ea5"
+    },
+    "202": {
+     "campaign_id": "longtail-eval-release-s202",
+     "launch_line_sha256": "a1bba9e47b5ccde4c2818f8d3640a9591c8b64dbe799b563de3bafb84a67b486"
+    },
+    "303": {
+     "campaign_id": "longtail-eval-release-s303",
+     "launch_line_sha256": "9b4ab4621b0cc5bb8b75588b6700656280fa4b51db6aedc9ef41be1283b528ed"
+    }
+   },
+   "cpus": "24-26",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/iwildcam-2019-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cxzFVM6WeSSMHZzucmEIDPiwVkzqApYE",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge",
+    "l4=ml.g6.2xlarge,ml.g5.2xlarge",
+    "t4=ml.g6.2xlarge,ml.g5.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "longtail",
+   "provision_wait_seconds": 300,
+   "rehearsal": "longtail-sm-dev-20261008r*: gold 0.4833, terminal salvage_finalized",
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/stanford-covid-vaccine/private.tar.gz",
+   "answers_version": "d1ygRVfBhQ9qR8fBNXgNTO7rYZidiLSD",
+   "box": "staging",
+   "budget_seconds": 5400,
+   "campaigns": {
+    "101": {
+     "campaign_id": "seqgraph-eval-release-s101",
+     "launch_line_sha256": "7f225ea12ed5dd51a1ea26c0b1430d9b4456e66f27642a6d784a0c2a7484eb72"
+    },
+    "202": {
+     "campaign_id": "seqgraph-eval-release-s202",
+     "launch_line_sha256": "f4bb8fbcf8d71b64d59236d7b72b862036e8a8fb000fec7b5f5d73ccc9648703"
+    },
+    "303": {
+     "campaign_id": "seqgraph-eval-release-s303",
+     "launch_line_sha256": "b551e85635be3dba2c85a9c2b081fbd5397dea07de2ae611bc7db1df033a60d4"
+    }
+   },
+   "cpus": "27-28",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/covid-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "NH0tj9QJNWxyM5vCT9G8jCpmGnrjeu5i",
+   "instance_map": [
+    "a100=ml.g5.xlarge,ml.g6.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "seqgraph",
+   "provision_wait_seconds": 300,
+   "rehearsal": "seqgraph-sm-dev-20261008r*: gold 0.3294",
+   "task": "stanford-covid-vaccine"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/predict-volcanic-eruptions-ingv-oe/private.tar.gz",
+   "answers_version": "0NgtOimelxHCQQGfz3v3G596RTwU4tdT",
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaigns": {
+    "101": {
+     "campaign_id": "segments-eval-release-s101",
+     "launch_line_sha256": "e4184fb67277c9fc6405117edc18645a4c57dd8056ceffd935fc51673bf72a96"
+    },
+    "202": {
+     "campaign_id": "segments-eval-release-s202",
+     "launch_line_sha256": "b885e8ae3d6e39f5472498f78c3d779953302c51b67f954bb83c81f8203a93cc"
+    },
+    "303": {
+     "campaign_id": "segments-eval-release-s303",
+     "launch_line_sha256": "b82880f716348ff205bea917c61259a517794314b9d8fdf1a11ca94e166091eb"
+    }
+   },
+   "cpus": "10-17",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/volcano-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "segments",
+   "provision_wait_seconds": 300,
+   "rehearsal": "segments-sm-dev-20261008r*: gold 2,740,004",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/smartphone-decimeter-2022/private.tar.gz",
+   "answers_version": "TOqc8bnJWBcEffdixsMCIDWNcHsDbwzT",
+   "box": "staging",
+   "budget_seconds": 7200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "tracklogs-eval-release-s101",
+     "launch_line_sha256": "416ed8aa9123a054e164063481a150e875a88cc4eb8247f2782e9b4c873c9b0d"
+    },
+    "202": {
+     "campaign_id": "tracklogs-eval-release-s202",
+     "launch_line_sha256": "904c883ce5b3d69c25118df2636323649a7bfd7d8b250ec892b9b0d9c6c8ce8e"
+    },
+    "303": {
+     "campaign_id": "tracklogs-eval-release-s303",
+     "launch_line_sha256": "55728b00cdce2624e50ccbb418b3cf9da535b421450bb9ee864e2c1dd80dd9fd"
+    }
+   },
+   "cpus": "18-23",
+   "data_property": "data property: the answers are reconstructible from raw files shipped in the public data; not a learned model",
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/gnss-2022-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "q1B839_3h4QPGbIYb6kOHWnKu4qHS08J",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "tracklogs",
+   "provision_wait_seconds": 300,
+   "rehearsal": "tracklogs-sm-dev-20261008r*: gold 0.0",
+   "task": "smartphone-decimeter-2022"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/nfl-player-contact-detection/private.tar.gz",
+   "answers_version": "kFNRZkEFFjz0904l.jeWrFEus9m9wvOT",
+   "box": "staging",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "pairs-eval-release-s101",
+     "launch_line_sha256": "88ad59ff4d60a75b4d6e5a33c1a34095ccea0749e50ad64459bf03d573449edb"
+    },
+    "202": {
+     "campaign_id": "pairs-eval-release-s202",
+     "launch_line_sha256": "8d110a7449124de4dc5d6e1f467ed48d0a1609dcff5d83b66d487550ba9ba657"
+    },
+    "303": {
+     "campaign_id": "pairs-eval-release-s303",
+     "launch_line_sha256": "b3f52b0c3265976d491a0708535180381e8e8a162136c93ecaec135627913cb6"
+    }
+   },
+   "cpus": "0-9",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/nfl-contact-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "pairs",
+   "provision_wait_seconds": 300,
+   "rehearsal": "pairs-sm-dev-20261008r*: bronze 0.7162",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/rsna-breast-cancer-detection/private.tar.gz",
+   "answers_version": "y0bQ15wedo1dJIVZ4JSG_CL9bE7SZa1E",
+   "box": "staging2",
+   "budget_seconds": 82800,
+   "campaigns": {
+    "101": {
+     "campaign_id": "imgscr-eval-release-s101",
+     "launch_line_sha256": "866243aeb501f46c882d51e2a0b964b989d82a15fea93d3862f12d434f7e803e"
+    },
+    "202": {
+     "campaign_id": "imgscr-eval-release-s202",
+     "launch_line_sha256": "87dea5fba2ef43a62b433ed3db150e65887bc1bb8a9c7bcd70e77c9675bbb28e"
+    },
+    "303": {
+     "campaign_id": "imgscr-eval-release-s303",
+     "launch_line_sha256": "d23c6f09ff7822ac7922ea151e61a846b2b30b1a55e39c244d199a116413e20b"
+    }
+   },
+   "cpus": "0-23",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-box-campaigns/breast-inputs-20261008/inputs/public.tar.gz",
+   "data_version": "WoUopYhgZhsYw_tC9FYqaWbvz1quujR.",
+   "instance_map": [
+    "a100=ml.g6e.16xlarge,ml.g6e.8xlarge,ml.g6e.12xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "screening",
+   "provision_wait_seconds": 300,
+   "rehearsal": "imgscr-sm-dev-20261009r2 (r1 ended with no submission; no score was spent)",
+   "task": "rsna-breast-cancer-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/google-research-identify-contrails-reduce-global-warming/private.tar.gz",
+   "answers_version": "eHRJRu6l9N.bOZSniqLESsf792lxfV2B",
+   "box": "gpu",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "bandseg-eval-release-s101",
+     "launch_line_sha256": "96dbfe63e8bc7994d0a82c9b16f005669146e6a8a821dc2682fe41b7a2d9502a"
+    },
+    "202": {
+     "campaign_id": "bandseg-eval-release-s202",
+     "launch_line_sha256": "3332b6bfc39ffc2bafd52eb98c4ab5eb03afffeb15a46119635766dfa351e8d5"
+    },
+    "303": {
+     "campaign_id": "bandseg-eval-release-s303",
+     "launch_line_sha256": "f64e702e33d9806013725d642d5b390c88ccd14fe478e629f7cabbf329e84567"
+    }
+   },
+   "cpus": "0-7",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-box-campaigns/contrails-inputs-20261009-full/inputs/public.tar.gz",
+   "data_version": "GPVs86gO6TkFPLv5CQtFIXXZcaZs2J9W",
+   "instance_map": [
+    "a100=ml.g6e.xlarge,ml.g6e.4xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "bandseg",
+   "provision_wait_seconds": 900,
+   "rehearsal": "bandseg-sm-dev-20261008r1: silver 0.6971",
+   "task": "google-research-identify-contrails-reduce-global-warming"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/3d-object-detection-for-autonomous-vehicles/private.tar.gz",
+   "answers_version": "pRSG90O12lDjojRUTBjsyrtY.CXif5Uq",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "points-eval-release-s101",
+     "launch_line_sha256": "27cd6d3c7bca2b3c4a54c6859d23009e20664d8b824d569d574443f7353d0dc4"
+    },
+    "202": {
+     "campaign_id": "points-eval-release-s202",
+     "launch_line_sha256": "57ca73486118a6055ffeb748ce9b2713acfbdd5a27bafe22f7bfdccac1cfbf34"
+    },
+    "303": {
+     "campaign_id": "points-eval-release-s303",
+     "launch_line_sha256": "e2156fd43655e592bf24682e4c34b82b4b8917267875713dbe80a6a675f6cd35"
+    }
+   },
+   "cpus": "28-29",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-box-campaigns/lyft3d-inputs-20261007/inputs/public.tar.gz",
+   "data_version": "Sf_lGcHeUF0SBWfsSx2qTqvt4Er83PTS",
+   "instance_map": [
+    "a100=ml.g5.8xlarge,ml.g6.4xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "points",
+   "provision_wait_seconds": 300,
+   "rehearsal": "points-sm-dev-20261008r1: gold 0.1813",
+   "task": "3d-object-detection-for-autonomous-vehicles"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/vinbigdata-chest-xray-abnormalities-detection/private.tar.gz",
+   "answers_version": "i4niYWbfUw3b4WfmM4yPNMNuPn9P8evi",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "imgdet-eval-release-s101",
+     "launch_line_sha256": "71f7d540e8340f0be71d1650316d9b86694776424c57d126671c966c7eba738b"
+    },
+    "202": {
+     "campaign_id": "imgdet-eval-release-s202",
+     "launch_line_sha256": "03e49f23640728b3652d985fe5b1e2b9342650d589602bc57ba5c8e92eb45c6a"
+    },
+    "303": {
+     "campaign_id": "imgdet-eval-release-s303",
+     "launch_line_sha256": "3cbb425137e767ec141924b911d3596bb5eb0ee1140e18f875b534a75bb94c65"
+    }
+   },
+   "cpus": "24-25",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/vinbig-medal-wave-inputs-20260928/inputs/public.tar.gz",
+   "data_version": "YbxsJPNRaOqqSzw3aNZyfHqmtEMOB2Y5",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g5.4xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "detection",
+   "provision_wait_seconds": 900,
+   "rehearsal": "imgdet-sm-dev-20261008r1: gold 0.4256",
+   "task": "vinbigdata-chest-xray-abnormalities-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/rsna-miccai-brain-tumor-radiogenomic-classification/private.tar.gz",
+   "answers_version": "bbGFIQwYcDjWcJY_kZyPa0ERLWgTP4Oa",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "imgvol-eval-release-s101",
+     "launch_line_sha256": "f7639fa78ee5cc05f7aee80d8eb321b38354882123be488aac983f45be91ed1f"
+    },
+    "202": {
+     "campaign_id": "imgvol-eval-release-s202",
+     "launch_line_sha256": "c7a8c32cbb4937f2ae3fa5ae34715b41314e5cd65555b291535977afeeb2db02"
+    },
+    "303": {
+     "campaign_id": "imgvol-eval-release-s303",
+     "launch_line_sha256": "d82b04f4ed5bfb577a85cfb7e98f44c640903ec019013a169382744409a9b466"
+    }
+   },
+   "cpus": "31",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/rsna-miccai-medal-wave-inputs-20260923/inputs/public.tar.gz",
+   "data_version": "pMVOiWctUxAsWMowI7v0Y7rALrNa9VeZ",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "cohort",
+   "provision_wait_seconds": 300,
+   "rehearsal": "not rehearsed hands-off (by choice): the launch row is the generated one",
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/hms-harmful-brain-activity-classification/private.tar.gz",
+   "answers_version": "ySr1ix.mswjWrodIk440YVfYIaYb7Okj",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "signal-eval-release-s101",
+     "launch_line_sha256": "dbbacfb0b3c938efb2702faf0123c6cd1326b66d9e8c9814f7ef9ccec184977f"
+    },
+    "202": {
+     "campaign_id": "signal-eval-release-s202",
+     "launch_line_sha256": "2463e780ecd95cf31775aa0fa7f513b0f6697f4d54dad93be94819d0ca62cbcd"
+    },
+    "303": {
+     "campaign_id": "signal-eval-release-s303",
+     "launch_line_sha256": "be6fb81592f6e70c7e53a244099e8aaf6004ed6bf3645bac3a02910aa1365075"
+    }
+   },
+   "cpus": "30",
+   "data_property": "data property: the gain over the signal model comes from the layout of the public test index (rows per recording, order, length), not from a better model",
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/hms-brain-medal-wave-inputs-20260923/inputs/public.tar.gz",
+   "data_version": "jdS.EJqv83aDFbb9I37jgQusheR5idOh",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g6e.2xlarge",
+    "l4=ml.g6e.2xlarge",
+    "t4=ml.g6e.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "signal",
+   "provision_wait_seconds": 300,
+   "rehearsal": "hands-off rehearsal scored 0.3798 against a 0.3754 line: no medal",
+   "task": "hms-harmful-brain-activity-classification"
+  }
+ ],
+ "tree_sha256": "6ca8ec9aa2c40bf27d36dd45d8bb9f66c71548529431ee8de66b4265fe92fe36",
+ "weights_manifest": "resolved by the launcher from the digests of the job images"
+}

@@ -1,0 +1,422 @@
+[
+ {
+  "task": "3d-object-detection-for-autonomous-vehicles",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "silver"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "gold": 0.139,
+  "silver": 0.053,
+  "bronze": 0.046,
+  "median": 0.042,
+  "lower": false
+ },
+ {
+  "task": "vinbigdata-chest-xray-abnormalities-detection",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "gold": 0.289,
+  "silver": 0.257,
+  "bronze": 0.243,
+  "median": 0.223,
+  "lower": false
+ },
+ {
+  "task": "iwildcam-2019-fgvc6",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "gold",
+   "gold",
+   "silver"
+  ],
+  "gold": 0.212,
+  "silver": 0.129,
+  "bronze": 0.114,
+  "median": 0.108,
+  "lower": false
+ },
+ {
+  "task": "predict-volcanic-eruptions-ingv-oe",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "gold": 3971366.0,
+  "silver": 4808057.0,
+  "bronze": 4999330.0,
+  "median": 6300677.0,
+  "lower": true
+ },
+ {
+  "task": "stanford-covid-vaccine",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "gold": 0.34728,
+  "silver": 0.35175,
+  "bronze": 0.3534,
+  "median": 0.363095,
+  "lower": true
+ },
+ {
+  "task": "smartphone-decimeter-2022",
+  "ees": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 1.768,
+  "silver": 2.119,
+  "bronze": 3.068,
+  "median": 3.3280000000000003,
+  "lower": true
+ },
+ {
+  "task": "nfl-player-contact-detection",
+  "ees": [
+   "bronze",
+   "bronze",
+   "bronze"
+  ],
+  "mars": [
+   "bronze",
+   "bronze",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "bronze"
+  ],
+  "aibuildai": [
+   "bronze",
+   "silver",
+   "bronze"
+  ],
+  "gold": 0.78167,
+  "silver": 0.72203,
+  "bronze": 0.69652,
+  "median": 0.69139,
+  "lower": false
+ },
+ {
+  "task": "rsna-breast-cancer-detection",
+  "ees": [
+   "silver",
+   "silver",
+   "gold"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.49,
+  "silver": 0.43,
+  "bronze": 0.41,
+  "median": 0.28,
+  "lower": false
+ },
+ {
+  "task": "google-research-identify-contrails-reduce-global-warming",
+  "ees": [
+   "silver",
+   "none",
+   "none"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.71059,
+  "silver": 0.6936,
+  "bronze": 0.67929,
+  "median": 0.63819,
+  "lower": false
+ },
+ {
+  "task": "rsna-miccai-brain-tumor-radiogenomic-classification",
+  "ees": [
+   "silver",
+   "silver",
+   "silver"
+  ],
+  "mars": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "famou": [
+   "gold",
+   "gold",
+   "gold"
+  ],
+  "aibuildai": [
+   "bronze",
+   "silver",
+   "gold"
+  ],
+  "gold": 0.60096,
+  "silver": 0.5815,
+  "bronze": 0.57449,
+  "median": 0.52553,
+  "lower": false
+ },
+ {
+  "task": "hms-harmful-brain-activity-classification",
+  "ees": [
+   "none",
+   "bronze",
+   "bronze"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.290807,
+  "silver": 0.353323,
+  "bronze": 0.375383,
+  "median": 0.473828,
+  "lower": true
+ },
+ {
+  "task": "siim-covid19-detection",
+  "ees": [
+   "none",
+   "none",
+   "none"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.623,
+  "silver": 0.609,
+  "bronze": 0.601,
+  "median": 0.586,
+  "lower": false
+ },
+ {
+  "task": "rsna-2022-cervical-spine-fracture-detection",
+  "ees": [
+   "none",
+   "none",
+   "none"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.2767,
+  "silver": 0.49,
+  "bronze": 0.5212,
+  "median": 0.5223,
+  "lower": true
+ },
+ {
+  "task": "vesuvius-challenge-ink-detection",
+  "ees": [
+   "none",
+   "none",
+   "none"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.779927,
+  "silver": 0.725248,
+  "bronze": 0.660027,
+  "median": 0.418442,
+  "lower": false
+ },
+ {
+  "task": "bms-molecular-translation",
+  "ees": [
+   "none",
+   "none",
+   "none"
+  ],
+  "mars": [
+   "none",
+   "none",
+   "none"
+  ],
+  "famou": [
+   "none",
+   "none",
+   "none"
+  ],
+  "aibuildai": [
+   "none",
+   "none",
+   "none"
+  ],
+  "gold": 0.62,
+  "silver": 1.37,
+  "bronze": 1.99,
+  "median": 5.58,
+  "lower": true
+ }
+]

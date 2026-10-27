@@ -1,0 +1,17 @@
+{
+ "derived_from": "high_eval/eval_task_metrics.csv",
+ "campaign_id": "imgvol-eval-release-s303",
+ "wall_hours": "2.832",
+ "gpu_hours": "2.159",
+ "gpu_hours_basis": "SageMaker BillableTimeInSeconds (describe_training_job)",
+ "sagemaker_billed_jobs": "1",
+ "sagemaker_unbilled_jobs_capacity_or_stopped": "0",
+ "sagemaker_instance_types_billed": "ml.g5.2xlarge",
+ "gpu_lease_hours_incl_queue": "2.172",
+ "llm_usd": "0.032632",
+ "llm_turns": "23",
+ "llm_input_tokens": "269283",
+ "llm_output_tokens": "11408",
+ "attempts": "3",
+ "grade_count": "1"
+}

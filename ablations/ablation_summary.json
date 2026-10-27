@@ -1,0 +1,1222 @@
+{
+ "cells": [
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "seqgraph",
+   "task": "stanford-covid-vaccine",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.32728,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 0.33214,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.33513,
+     "medal": "gold",
+     "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 1,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 10,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 12,
+      "scripted_planner_dispatches": 1
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.33513,
+     "medal": "gold",
+     "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 1,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 12,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 14,
+      "scripted_planner_dispatches": 1
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": -0.01644,
+   "release_three_seed_relative_range": 0.01476,
+   "gpu_hours_ablated": [
+    0.833,
+    0.994
+   ],
+   "gpu_hours_release": [
+    0.831,
+    0.833
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    1.527,
+    1.522
+   ],
+   "wall_hours_release": [
+    1.53,
+    1.53
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "longtail",
+   "task": "iwildcam-2019-fgvc6",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.36575,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 0.45765,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.47335,
+     "medal": "gold",
+     "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 4,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 7,
+      "scripted_planner_dispatches": 2
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.49101,
+     "medal": "gold",
+     "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 4,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 7,
+      "scripted_planner_dispatches": 2
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.17119,
+   "release_three_seed_relative_range": 0.22335,
+   "gpu_hours_ablated": [
+    2.281,
+    2.233
+   ],
+   "gpu_hours_release": [
+    2.088,
+    2.201
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    3.05,
+    3.06
+   ],
+   "wall_hours_release": [
+    3.035,
+    3.065
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "cohort",
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.59,
+     "medal": "silver"
+    },
+    {
+     "seed": 202,
+     "score": 0.59,
+     "medal": "silver"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.59,
+     "medal": "silver",
+     "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 2,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 5,
+      "scripted_planner_dispatches": 2
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.59,
+     "medal": "silver",
+     "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 2,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 5,
+      "scripted_planner_dispatches": 2
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.0,
+   "release_three_seed_relative_range": 0.0,
+   "gpu_hours_ablated": [
+    2.14,
+    2.158
+   ],
+   "gpu_hours_release": [
+    2.14,
+    2.158
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    2.671,
+    2.618
+   ],
+   "wall_hours_release": [
+    3.878,
+    3.403
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "segments",
+   "task": "predict-volcanic-eruptions-ingv-oe",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 2626042.0,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 2613825.0,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 2646852.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 28,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 32,
+      "scripted_planner_dispatches": 2
+     }
+    },
+    {
+     "seed": 202,
+     "score": 2636940.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 36,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 40,
+      "scripted_planner_dispatches": 2
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": -0.00838,
+   "release_three_seed_relative_range": 0.03838,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    6.051,
+    6.061
+   ],
+   "wall_hours_release": [
+    6.066,
+    6.069
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "pairs",
+   "task": "nfl-player-contact-detection",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.71042,
+     "medal": "bronze"
+    },
+    {
+     "seed": 202,
+     "score": 0.71495,
+     "medal": "bronze"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.71406,
+     "medal": "bronze",
+     "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 24,
+      "scheduled_stage_events": 15,
+      "scripted_planner_calls": 29,
+      "scripted_planner_dispatches": 2
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.71406,
+     "medal": "bronze",
+     "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 2,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 24,
+      "scheduled_stage_events": 16,
+      "scripted_planner_calls": 29,
+      "scripted_planner_dispatches": 2
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.00193,
+   "release_three_seed_relative_range": 0.00688,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    12.512,
+    12.529
+   ],
+   "wall_hours_release": [
+    12.492,
+    12.54
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_llm_reasoning",
+   "tag": "ablation-release-a",
+   "row": "detection",
+   "task": "vinbigdata-chest-xray-abnormalities-detection",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.43555,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 0.43099,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.43396,
+     "medal": "gold",
+     "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s101-relaunch1",
+     "relaunched": true,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 1,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 14,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 16,
+      "scripted_planner_dispatches": 1
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.4192,
+     "medal": "gold",
+     "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 0,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 1,
+      "provider_planner_turns": 0,
+      "review_calls_refused": 16,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 18,
+      "scripted_planner_dispatches": 1
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": -0.01544,
+   "release_three_seed_relative_range": 0.039,
+   "gpu_hours_ablated": [
+    8.097,
+    8.573
+   ],
+   "gpu_hours_release": [
+    7.06,
+    6.058
+   ],
+   "unbilled_jobs_ablated": [
+    2,
+    3
+   ],
+   "wall_hours_ablated": [
+    11.259,
+    12.142
+   ],
+   "wall_hours_release": [
+    12.093,
+    11.958
+   ],
+   "capacity_affected": false,
+   "flags": [
+    "relaunched"
+   ]
+  },
+  {
+   "ablation": "no_capacity_ladder",
+   "tag": "ablation-release-a",
+   "row": "segments",
+   "task": "predict-volcanic-eruptions-ingv-oe",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 2626042.0,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 2613825.0,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 2859117.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 5,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 38,
+      "provider_planner_turns": 38,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 2733449.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 6,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 45,
+      "provider_planner_turns": 45,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": -0.06731,
+   "release_three_seed_relative_range": 0.03838,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    6.067,
+    6.063
+   ],
+   "wall_hours_release": [
+    6.066,
+    6.069
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_capacity_ladder",
+   "tag": "ablation-release-a",
+   "row": "pairs",
+   "task": "nfl-player-contact-detection",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.71042,
+     "medal": "bronze"
+    },
+    {
+     "seed": 202,
+     "score": 0.71495,
+     "medal": "bronze"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.71395,
+     "medal": "bronze",
+     "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 4,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 52,
+      "provider_planner_turns": 52,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 21,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.71866,
+     "medal": "bronze",
+     "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 5,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 44,
+      "provider_planner_turns": 44,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 21,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.00508,
+   "release_three_seed_relative_range": 0.00688,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    12.703,
+    12.643
+   ],
+   "wall_hours_release": [
+    12.492,
+    12.54
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_second_stages",
+   "tag": "ablation-release-b",
+   "row": "pairs",
+   "task": "nfl-player-contact-detection",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.71042,
+     "medal": "bronze"
+    },
+    {
+     "seed": 202,
+     "score": 0.71495,
+     "medal": "bronze"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.69608,
+     "medal": "none",
+     "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 33,
+      "provider_planner_turns": 33,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.69648,
+     "medal": "none",
+     "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 45,
+      "provider_planner_turns": 45,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 0,
+   "relative_change_of_mean_positive_is_better": -0.02302,
+   "release_three_seed_relative_range": 0.00688,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    12.253,
+    12.332
+   ],
+   "wall_hours_release": [
+    12.492,
+    12.54
+   ],
+   "capacity_affected": false,
+   "flags": []
+  },
+  {
+   "ablation": "no_second_stages",
+   "tag": "ablation-release-b",
+   "row": "signal",
+   "task": "hms-harmful-brain-activity-classification",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.41207,
+     "medal": "none"
+    },
+    {
+     "seed": 202,
+     "score": 0.37228,
+     "medal": "bronze"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.48484,
+     "medal": "none",
+     "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 1,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 28,
+      "provider_planner_turns": 28,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.52626,
+     "medal": "none",
+     "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s202",
+     "relaunched": false,
+     "stop_reason": "salvage_finalized",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 1,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 2,
+      "declared_in_trace": 2,
+      "planner_transcript_turns": 17,
+      "provider_planner_turns": 17,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 1,
+   "ablated_medal_seed_runs": 0,
+   "relative_change_of_mean_positive_is_better": -0.28909,
+   "release_three_seed_relative_range": 0.10295,
+   "gpu_hours_ablated": [
+    8.666,
+    9.262
+   ],
+   "gpu_hours_release": [
+    5.084,
+    6.804
+   ],
+   "unbilled_jobs_ablated": [
+    13,
+    14
+   ],
+   "wall_hours_ablated": [
+    12.105,
+    12.239
+   ],
+   "wall_hours_release": [
+    11.607,
+    11.971
+   ],
+   "capacity_affected": false,
+   "flags": [
+    "data_property",
+    "salvage"
+   ]
+  },
+  {
+   "ablation": "no_method_prior",
+   "tag": "ablation-release-b",
+   "row": "seqgraph",
+   "task": "stanford-covid-vaccine",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.32728,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 0.33214,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.32705,
+     "medal": "gold",
+     "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 31,
+      "provider_planner_turns": 31,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.32802,
+     "medal": "gold",
+     "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s202",
+     "relaunched": false,
+     "stop_reason": "controller_failure_finalized",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 0,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 2,
+      "declared_in_trace": 2,
+      "planner_transcript_turns": 31,
+      "provider_planner_turns": 31,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.0066,
+   "release_three_seed_relative_range": 0.01476,
+   "gpu_hours_ablated": [
+    0.835,
+    0.831
+   ],
+   "gpu_hours_release": [
+    0.831,
+    0.833
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    1.53,
+    1.64
+   ],
+   "wall_hours_release": [
+    1.53,
+    1.53
+   ],
+   "capacity_affected": false,
+   "flags": [
+    "recovery"
+   ]
+  },
+  {
+   "ablation": "no_method_prior",
+   "tag": "ablation-release-b",
+   "row": "longtail",
+   "task": "iwildcam-2019-fgvc6",
+   "lower_is_better": false,
+   "release": [
+    {
+     "seed": 101,
+     "score": 0.36575,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 0.45765,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 0.45875,
+     "medal": "gold",
+     "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s101",
+     "relaunched": false,
+     "stop_reason": "salvage_finalized",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 21,
+      "provider_planner_turns": 21,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 0.52884,
+     "medal": "gold",
+     "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 28,
+      "provider_planner_turns": 28,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.1994,
+   "release_three_seed_relative_range": 0.22335,
+   "gpu_hours_ablated": [
+    2.223,
+    2.225
+   ],
+   "gpu_hours_release": [
+    2.088,
+    2.201
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    3.069,
+    3.037
+   ],
+   "wall_hours_release": [
+    3.035,
+    3.065
+   ],
+   "capacity_affected": false,
+   "flags": [
+    "salvage"
+   ]
+  },
+  {
+   "ablation": "no_method_prior",
+   "tag": "ablation-release-b",
+   "row": "segments",
+   "task": "predict-volcanic-eruptions-ingv-oe",
+   "lower_is_better": true,
+   "release": [
+    {
+     "seed": 101,
+     "score": 2626042.0,
+     "medal": "gold"
+    },
+    {
+     "seed": 202,
+     "score": 2613825.0,
+     "medal": "gold"
+    }
+   ],
+   "ablated": [
+    {
+     "seed": 101,
+     "score": 2563387.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s101",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 46,
+      "provider_planner_turns": 46,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    },
+    {
+     "seed": 202,
+     "score": 2674897.0,
+     "medal": "gold",
+     "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s202",
+     "relaunched": false,
+     "stop_reason": "exploration_exhausted",
+     "counts": {
+      "capacity_change_refused": 0,
+      "capacity_ladder_ablated": 0,
+      "capacity_ladder_climb": 2,
+      "capacity_ladder_start_tier": 0,
+      "council_convened": 1,
+      "declared_in_trace": 1,
+      "planner_transcript_turns": 46,
+      "provider_planner_turns": 46,
+      "review_calls_refused": 0,
+      "scheduled_stage_events": 0,
+      "scripted_planner_calls": 0,
+      "scripted_planner_dispatches": 0
+     }
+    }
+   ],
+   "release_medal_seed_runs": 2,
+   "ablated_medal_seed_runs": 2,
+   "relative_change_of_mean_positive_is_better": 0.0003,
+   "release_three_seed_relative_range": 0.03838,
+   "gpu_hours_ablated": [
+    0.0,
+    0.0
+   ],
+   "gpu_hours_release": [
+    0.0,
+    0.0
+   ],
+   "unbilled_jobs_ablated": [
+    0,
+    0
+   ],
+   "wall_hours_ablated": [
+    6.065,
+    6.071
+   ],
+   "wall_hours_release": [
+    6.066,
+    6.069
+   ],
+   "capacity_affected": false,
+   "flags": []
+  }
+ ],
+ "totals": {
+  "no_llm_reasoning": {
+   "cells": 6,
+   "release_medal_seed_runs": 12,
+   "ablated_medal_seed_runs": 12,
+   "capacity_affected_cells": []
+  },
+  "no_capacity_ladder": {
+   "cells": 2,
+   "release_medal_seed_runs": 4,
+   "ablated_medal_seed_runs": 4,
+   "capacity_affected_cells": []
+  },
+  "no_second_stages": {
+   "cells": 2,
+   "release_medal_seed_runs": 3,
+   "ablated_medal_seed_runs": 0,
+   "capacity_affected_cells": []
+  },
+  "no_method_prior": {
+   "cells": 3,
+   "release_medal_seed_runs": 6,
+   "ablated_medal_seed_runs": 6,
+   "capacity_affected_cells": []
+  }
+ }
+}

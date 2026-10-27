@@ -1,0 +1,643 @@
+{
+ "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+ "launcher_budget_cap_seconds": 82800.0,
+ "notes": [
+  "CAPACITY ml.g5.2xlarge is the first choice of ['longtail', 'cohort']: the account holds one instance per type, so one of them waits or falls to its next type"
+ ],
+ "plan": [
+  {
+   "box": "staging2",
+   "budget_seconds": 82800,
+   "campaign_id": "imgscr-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_screening.sh",
+   "cpus": "0-23",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.16xlarge,ml.g6e.8xlarge,ml.g6e.12xlarge"
+   ],
+   "launch_line_sha256": "866243aeb501f46c882d51e2a0b964b989d82a15fea93d3862f12d434f7e803e",
+   "launch_script": "<redacted-path>/launch_screening_s101.sh",
+   "name": "screening",
+   "notes": [
+    "82,800 s needs the 23 h campaign cap of <redacted-branch> (6e7c61c4); a tree whose launcher caps a campaign at 43,200 s refuses this row",
+    "the public tree is the raw 290 GB archive: the coordinator host needs >= 930 GB free and builds its view on the host's cores. The rehearsal had no fixed core set on a host other work was loading (about five cores on average); here it owns 24"
+   ],
+   "preflight_script": "<redacted-path>/preflight_screening_s101.sh",
+   "task": "rsna-breast-cancer-detection"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 43200,
+   "campaign_id": "pairs-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_pairs.sh",
+   "cpus": "0-9",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "88ad59ff4d60a75b4d6e5a33c1a34095ccea0749e50ad64459bf03d573449edb",
+   "launch_script": "<redacted-path>/launch_pairs_s101.sh",
+   "name": "pairs",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_pairs_s101.sh",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "box": "gpu",
+   "budget_seconds": 43200,
+   "campaign_id": "bandseg-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_bandseg.sh",
+   "cpus": "0-7",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.xlarge,ml.g6e.4xlarge"
+   ],
+   "launch_line_sha256": "96dbfe63e8bc7994d0a82c9b16f005669146e6a8a821dc2682fe41b7a2d9502a",
+   "launch_script": "<redacted-path>/launch_bandseg_s101.sh",
+   "name": "bandseg",
+   "notes": [
+    "restore of the full tree measured at 4,256 s and the view build at 1,234 s with ten cores; both come out of the 12 h budget before the first job"
+   ],
+   "preflight_script": "<redacted-path>/preflight_bandseg_s101.sh",
+   "task": "google-research-identify-contrails-reduce-global-warming"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "points-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_points.sh",
+   "cpus": "28-29",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.8xlarge,ml.g6.4xlarge"
+   ],
+   "launch_line_sha256": "27cd6d3c7bca2b3c4a54c6859d23009e20664d8b824d569d574443f7353d0dc4",
+   "launch_script": "<redacted-path>/launch_points_s101.sh",
+   "name": "points",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_points_s101.sh",
+   "task": "3d-object-detection-for-autonomous-vehicles"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "imgdet-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_detection.sh",
+   "cpus": "24-25",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g5.4xlarge"
+   ],
+   "launch_line_sha256": "71f7d540e8340f0be71d1650316d9b86694776424c57d126671c966c7eba738b",
+   "launch_script": "<redacted-path>/launch_detection_s101.sh",
+   "name": "detection",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_detection_s101.sh",
+   "task": "vinbigdata-chest-xray-abnormalities-detection"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "imgvol-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_cohort.sh",
+   "cpus": "31",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge"
+   ],
+   "launch_line_sha256": "f7639fa78ee5cc05f7aee80d8eb321b38354882123be488aac983f45be91ed1f",
+   "launch_script": "<redacted-path>/launch_cohort_s101.sh",
+   "name": "cohort",
+   "notes": [
+    "59 test patients; this held-out set has been scored three times in dev"
+   ],
+   "preflight_script": "<redacted-path>/preflight_cohort_s101.sh",
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaign_id": "segments-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_segments.sh",
+   "cpus": "10-17",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "e4184fb67277c9fc6405117edc18645a4c57dd8056ceffd935fc51673bf72a96",
+   "launch_script": "<redacted-path>/launch_segments_s101.sh",
+   "name": "segments",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_segments_s101.sh",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 10800,
+   "campaign_id": "longtail-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_longtail.sh",
+   "cpus": "24-26",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge",
+    "l4=ml.g6.2xlarge,ml.g5.2xlarge",
+    "t4=ml.g6.2xlarge,ml.g5.2xlarge"
+   ],
+   "launch_line_sha256": "ec185117d3037e75ca9c0820e54bd293a24d93cbdba98d356dbe581e37f15ea5",
+   "launch_script": "<redacted-path>/launch_longtail_s101.sh",
+   "name": "longtail",
+   "notes": [
+    "the rehearsal reached its score through the in-campaign terminal salvage"
+   ],
+   "preflight_script": "<redacted-path>/preflight_longtail_s101.sh",
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 7200,
+   "campaign_id": "tracklogs-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_tracklogs.sh",
+   "cpus": "18-23",
+   "data_property": "data property: the answers are reconstructible from raw files shipped in the public data; not a learned model",
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "416ed8aa9123a054e164063481a150e875a88cc4eb8247f2782e9b4c873c9b0d",
+   "launch_script": "<redacted-path>/launch_tracklogs_s101.sh",
+   "name": "tracklogs",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_tracklogs_s101.sh",
+   "task": "smartphone-decimeter-2022"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 5400,
+   "campaign_id": "seqgraph-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_seqgraph.sh",
+   "cpus": "27-28",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.xlarge,ml.g6.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "7f225ea12ed5dd51a1ea26c0b1430d9b4456e66f27642a6d784a0c2a7484eb72",
+   "launch_script": "<redacted-path>/launch_seqgraph_s101.sh",
+   "name": "seqgraph",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_seqgraph_s101.sh",
+   "task": "stanford-covid-vaccine"
+  }
+ ],
+ "preregistration": {
+  "local": "<redacted-path>/preregistration.json",
+  "sha256": "bac602880cb504f0cab700fe9029ed1873820c165e73c7a7a061e3fab4818a29",
+  "uri": "<redacted-storage>/medium-medal-box-campaigns/eval-preregistration/eval-release/preregistration.json"
+ },
+ "print_only": false,
+ "seed": 101,
+ "seeds": [
+  101,
+  202,
+  303
+ ],
+ "stage": "launch",
+ "tag": "eval-release",
+ "tree_sha256": "6ca8ec9aa2c40bf27d36dd45d8bb9f66c71548529431ee8de66b4265fe92fe36"
+}launch 2026-10-13T16:50:18Z campaign=imgscr-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "imgscr-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/imgscr-eval-release-s101/executor/logs",
+  "cpus": "0-23",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-a8d03686d000adf1.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/imgscr-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:50:22.822422Z",
+  "state_dir": "<redacted-path>/campaigns/imgscr-eval-release-s101/executor",
+  "unit": "campaign-a8d03686d000adf1.service",
+  "workspace": "<redacted-path>/campaigns/imgscr-eval-release-s101/workspace"
+}
+unit=campaign-a8d03686d000adf1.service
+AllowedCPUs=0-23
+ActiveState=active SubState=running 
+Started campaign-a8d03686d000adf1.service - ees campaign imgscr-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:50:23.059135Z launching campaign imgscr-eval-release-s101
+[box] shape canary receipt 388a4d011ae4 accepted
+{
+  "campaign_id": "imgscr-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910224733289170",
+  "coordinator_pid": 225111,
+  "deadline_at": "2026-10-14T15:50:23.121813Z",
+  "logs": "tail -f <redacted-path>/campaigns/imgscr-eval-release-s101/executor/logs/1791910224733289170.log",
+  "state_dir": "<redacted-path>/campaigns/imgscr-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/imgscr-eval-release-s101",
+  "task": "rsna-breast-cancer-detection"
+}
+[box] 2026-10-13T16:50:24.839551+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910224733289170 JOB_STATE_RUNNING
+launch 2026-10-13T16:50:45Z campaign=pairs-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "pairs-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/pairs-eval-release-s101/executor/logs",
+  "cpus": "0-9",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-ec010ae6b0ed3781.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/pairs-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:50:50.138963Z",
+  "state_dir": "<redacted-path>/campaigns/pairs-eval-release-s101/executor",
+  "unit": "campaign-ec010ae6b0ed3781.service",
+  "workspace": "<redacted-path>/campaigns/pairs-eval-release-s101/workspace"
+}
+unit=campaign-ec010ae6b0ed3781.service
+AllowedCPUs=0-9
+ActiveState=active SubState=running 
+Started campaign-ec010ae6b0ed3781.service - ees campaign pairs-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:50:50.380668Z launching campaign pairs-eval-release-s101
+[box] shape canary receipt 9d306f112192 accepted
+{
+  "campaign_id": "pairs-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910252238131411",
+  "coordinator_pid": 1889180,
+  "deadline_at": "2026-10-14T04:50:50.443691Z",
+  "logs": "tail -f <redacted-path>/campaigns/pairs-eval-release-s101/executor/logs/1791910252238131411.log",
+  "state_dir": "<redacted-path>/campaigns/pairs-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/pairs-eval-release-s101",
+  "task": "nfl-player-contact-detection"
+}
+[box] 2026-10-13T16:50:52.374470+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910252238131411 JOB_STATE_RUNNING
+launch 2026-10-13T16:51:17Z campaign=bandseg-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "bandseg-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/bandseg-eval-release-s101/executor/logs",
+  "cpus": "0-7",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-18306c5d17e3ff9e.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/bandseg-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:51:22.512121Z",
+  "state_dir": "<redacted-path>/campaigns/bandseg-eval-release-s101/executor",
+  "unit": "campaign-18306c5d17e3ff9e.service",
+  "workspace": "<redacted-path>/campaigns/bandseg-eval-release-s101/workspace"
+}
+unit=campaign-18306c5d17e3ff9e.service
+AllowedCPUs=0-7
+ActiveState=active SubState=running 
+Started campaign-18306c5d17e3ff9e.service - ees campaign bandseg-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:51:22.795226Z launching campaign bandseg-eval-release-s101
+[box] shape canary receipt 9963b1b417e4 accepted
+{
+  "campaign_id": "bandseg-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910284868983540",
+  "coordinator_pid": 489475,
+  "deadline_at": "2026-10-14T04:51:22.888078Z",
+  "logs": "tail -f <redacted-path>/campaigns/bandseg-eval-release-s101/executor/logs/1791910284868983540.log",
+  "state_dir": "<redacted-path>/campaigns/bandseg-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/bandseg-eval-release-s101",
+  "task": "google-research-identify-contrails-reduce-global-warming"
+}
+[box] 2026-10-13T16:51:24.990233+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910284868983540 JOB_STATE_RUNNING
+launch 2026-10-13T16:51:49Z campaign=points-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "points-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/points-eval-release-s101/executor/logs",
+  "cpus": "28-29",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-485229fbbe2386fa.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/points-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:51:54.172611Z",
+  "state_dir": "<redacted-path>/campaigns/points-eval-release-s101/executor",
+  "unit": "campaign-485229fbbe2386fa.service",
+  "workspace": "<redacted-path>/campaigns/points-eval-release-s101/workspace"
+}
+unit=campaign-485229fbbe2386fa.service
+AllowedCPUs=28-29
+ActiveState=active SubState=running 
+Started campaign-485229fbbe2386fa.service - ees campaign points-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:51:54.418416Z launching campaign points-eval-release-s101
+[box] shape canary receipt 78e55db942f5 accepted
+{
+  "campaign_id": "points-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910316062802539",
+  "coordinator_pid": 225364,
+  "deadline_at": "2026-10-14T04:51:54.482599Z",
+  "logs": "tail -f <redacted-path>/campaigns/points-eval-release-s101/executor/logs/1791910316062802539.log",
+  "state_dir": "<redacted-path>/campaigns/points-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/points-eval-release-s101",
+  "task": "3d-object-detection-for-autonomous-vehicles"
+}
+[box] 2026-10-13T16:51:56.168791+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910316062802539 JOB_STATE_RUNNING
+launch 2026-10-13T16:52:17Z campaign=imgdet-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "imgdet-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/imgdet-eval-release-s101/executor/logs",
+  "cpus": "24-25",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-75aa715e31045bcb.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/imgdet-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:52:22.279772Z",
+  "state_dir": "<redacted-path>/campaigns/imgdet-eval-release-s101/executor",
+  "unit": "campaign-75aa715e31045bcb.service",
+  "workspace": "<redacted-path>/campaigns/imgdet-eval-release-s101/workspace"
+}
+unit=campaign-75aa715e31045bcb.service
+AllowedCPUs=24-25
+ActiveState=active SubState=running 
+Started campaign-75aa715e31045bcb.service - ees campaign imgdet-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:52:22.538236Z launching campaign imgdet-eval-release-s101
+[box] shape canary receipt b917e2bc003b accepted
+{
+  "campaign_id": "imgdet-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910344212662468",
+  "coordinator_pid": 225595,
+  "deadline_at": "2026-10-14T04:52:22.604022Z",
+  "logs": "tail -f <redacted-path>/campaigns/imgdet-eval-release-s101/executor/logs/1791910344212662468.log",
+  "state_dir": "<redacted-path>/campaigns/imgdet-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/imgdet-eval-release-s101",
+  "task": "vinbigdata-chest-xray-abnormalities-detection"
+}
+[box] 2026-10-13T16:52:24.314860+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910344212662468 JOB_STATE_RUNNING
+launch 2026-10-13T16:52:49Z campaign=imgvol-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "imgvol-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/imgvol-eval-release-s101/executor/logs",
+  "cpus": "31",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-d5726cb89604232d.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/imgvol-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:52:54.883081Z",
+  "state_dir": "<redacted-path>/campaigns/imgvol-eval-release-s101/executor",
+  "unit": "campaign-d5726cb89604232d.service",
+  "workspace": "<redacted-path>/campaigns/imgvol-eval-release-s101/workspace"
+}
+unit=campaign-d5726cb89604232d.service
+AllowedCPUs=31
+ActiveState=active SubState=running 
+Started campaign-d5726cb89604232d.service - ees campaign imgvol-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:52:55.141023Z launching campaign imgvol-eval-release-s101
+[box] shape canary receipt 50203b5ef98c accepted
+{
+  "campaign_id": "imgvol-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910376422674732",
+  "coordinator_pid": 225767,
+  "deadline_at": "2026-10-14T04:52:55.213825Z",
+  "logs": "tail -f <redacted-path>/campaigns/imgvol-eval-release-s101/executor/logs/1791910376422674732.log",
+  "state_dir": "<redacted-path>/campaigns/imgvol-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/imgvol-eval-release-s101",
+  "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+}
+[box] 2026-10-13T16:52:56.545633+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910376422674732 JOB_STATE_RUNNING
+launch 2026-10-13T16:53:21Z campaign=segments-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "segments-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/segments-eval-release-s101/executor/logs",
+  "cpus": "10-17",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-a084a3ba36e0b0dc.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/segments-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:53:26.658634Z",
+  "state_dir": "<redacted-path>/campaigns/segments-eval-release-s101/executor",
+  "unit": "campaign-a084a3ba36e0b0dc.service",
+  "workspace": "<redacted-path>/campaigns/segments-eval-release-s101/workspace"
+}
+unit=campaign-a084a3ba36e0b0dc.service
+AllowedCPUs=10-17
+ActiveState=active SubState=running 
+Started campaign-a084a3ba36e0b0dc.service - ees campaign segments-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:53:26.892967Z launching campaign segments-eval-release-s101
+[box] shape canary receipt c1d53080f7cf accepted
+{
+  "campaign_id": "segments-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910408188907651",
+  "coordinator_pid": 1889456,
+  "deadline_at": "2026-10-13T22:53:26.955857Z",
+  "logs": "tail -f <redacted-path>/campaigns/segments-eval-release-s101/executor/logs/1791910408188907651.log",
+  "state_dir": "<redacted-path>/campaigns/segments-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/segments-eval-release-s101",
+  "task": "predict-volcanic-eruptions-ingv-oe"
+}
+[box] 2026-10-13T16:53:28.299227+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910408188907651 JOB_STATE_RUNNING
+launch 2026-10-13T16:53:54Z campaign=longtail-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "longtail-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/longtail-eval-release-s101/executor/logs",
+  "cpus": "24-26",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-f27f3f2387b65013.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/longtail-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:53:59.558534Z",
+  "state_dir": "<redacted-path>/campaigns/longtail-eval-release-s101/executor",
+  "unit": "campaign-f27f3f2387b65013.service",
+  "workspace": "<redacted-path>/campaigns/longtail-eval-release-s101/workspace"
+}
+unit=campaign-f27f3f2387b65013.service
+AllowedCPUs=24-26
+ActiveState=active SubState=running 
+Started campaign-f27f3f2387b65013.service - ees campaign longtail-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:53:59.800022Z launching campaign longtail-eval-release-s101
+[box] shape canary receipt 1ce6d6822114 accepted
+{
+  "campaign_id": "longtail-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910441089266023",
+  "coordinator_pid": 1889693,
+  "deadline_at": "2026-10-13T19:53:59.864638Z",
+  "logs": "tail -f <redacted-path>/campaigns/longtail-eval-release-s101/executor/logs/1791910441089266023.log",
+  "state_dir": "<redacted-path>/campaigns/longtail-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/longtail-eval-release-s101",
+  "task": "iwildcam-2019-fgvc6"
+}
+[box] 2026-10-13T16:54:01.208219+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910441089266023 JOB_STATE_RUNNING
+launch 2026-10-13T16:54:26Z campaign=tracklogs-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "tracklogs-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/tracklogs-eval-release-s101/executor/logs",
+  "cpus": "18-23",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-4eb61ea67df33ce5.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/tracklogs-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:54:31.658741Z",
+  "state_dir": "<redacted-path>/campaigns/tracklogs-eval-release-s101/executor",
+  "unit": "campaign-4eb61ea67df33ce5.service",
+  "workspace": "<redacted-path>/campaigns/tracklogs-eval-release-s101/workspace"
+}
+unit=campaign-4eb61ea67df33ce5.service
+AllowedCPUs=18-23
+ActiveState=active SubState=running 
+Started campaign-4eb61ea67df33ce5.service - ees campaign tracklogs-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:54:31.904818Z launching campaign tracklogs-eval-release-s101
+[box] shape canary receipt c9d12e788093 accepted
+{
+  "campaign_id": "tracklogs-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910473269589688",
+  "coordinator_pid": 1889881,
+  "deadline_at": "2026-10-13T18:54:31.969006Z",
+  "logs": "tail -f <redacted-path>/campaigns/tracklogs-eval-release-s101/executor/logs/1791910473269589688.log",
+  "state_dir": "<redacted-path>/campaigns/tracklogs-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/tracklogs-eval-release-s101",
+  "task": "smartphone-decimeter-2022"
+}
+[box] 2026-10-13T16:54:33.381961+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910473269589688 JOB_STATE_RUNNING
+launch 2026-10-13T16:54:59Z campaign=seqgraph-eval-release-s101 code=<redacted-path>/code/926abe7d0c17-6ca8ec9a
+{
+  "campaign_env": [],
+  "campaign_id": "seqgraph-eval-release-s101",
+  "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+  "coordinator_logs": "<redacted-path>/campaigns/seqgraph-eval-release-s101/executor/logs",
+  "cpus": "27-28",
+  "custom_code_sandbox": true,
+  "gpu_devices": [],
+  "gpu_executor": "sagemaker",
+  "journal": "journalctl -u campaign-94f54b878c8a393f.service -f",
+  "lane": "eval",
+  "launch_preflight": {
+    "failed": [],
+    "passed": true,
+    "receipt": "<redacted-path>/campaigns/seqgraph-eval-release-s101/launch-preflight.json"
+  },
+  "slice": "ees-bench.slice",
+  "started_at": "2026-10-13T16:55:04.298945Z",
+  "state_dir": "<redacted-path>/campaigns/seqgraph-eval-release-s101/executor",
+  "unit": "campaign-94f54b878c8a393f.service",
+  "workspace": "<redacted-path>/campaigns/seqgraph-eval-release-s101/workspace"
+}
+unit=campaign-94f54b878c8a393f.service
+AllowedCPUs=27-28
+ActiveState=active SubState=running 
+Started campaign-94f54b878c8a393f.service - ees campaign seqgraph-eval-release-s101.
+[aws-box] LLM provider openai model gpt-6-luna: OPENAI_API_KEY loaded from ees-bench/openai:OPENAI_API_KEY (value not shown)
+[aws-box] 2026-10-13T16:55:04.560360Z launching campaign seqgraph-eval-release-s101
+[box] shape canary receipt 36b3634bd327 accepted
+{
+  "campaign_id": "seqgraph-eval-release-s101",
+  "coordinator_job": "projects/<redacted-project>/locations/us-central1/customJobs/1791910506046733166",
+  "coordinator_pid": 1890127,
+  "deadline_at": "2026-10-13T18:25:04.632414Z",
+  "logs": "tail -f <redacted-path>/campaigns/seqgraph-eval-release-s101/executor/logs/1791910506046733166.log",
+  "state_dir": "<redacted-path>/campaigns/seqgraph-eval-release-s101/executor",
+  "store_uri": "<redacted-storage>/medium-medal-box-campaigns/seqgraph-eval-release-s101",
+  "task": "stanford-covid-vaccine"
+}
+[box] 2026-10-13T16:55:06.147600+00:00 projects/<redacted-project>/locations/us-central1/customJobs/1791910506046733166 JOB_STATE_RUNNING
+

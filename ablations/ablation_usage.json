@@ -1,0 +1,222 @@
+{
+ "basis": {
+  "gpu_hours": "SageMaker BillableTimeInSeconds (describe_training_job), jobs whose S3 output path is under the campaign",
+  "unbilled_jobs": "jobs with zero billable seconds (never placed or stopped before placement)",
+  "wall_hours": "manifest.json to terminal.json LastModified in the campaign store (matches eval_task_metrics.csv wall_hours for the release)"
+ },
+ "campaigns": {
+  "imgdet-abl-no-llm-reasoning-ablation-release-a-s101-relaunch1": {
+   "billed_jobs": 7,
+   "gpu_hours": 8.097,
+   "types": [
+    "ml.g5.4xlarge",
+    "ml.g6e.4xlarge"
+   ],
+   "unbilled_jobs": 2,
+   "wall_hours": 11.259
+  },
+  "imgdet-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 8,
+   "gpu_hours": 8.573,
+   "types": [
+    "ml.g5.4xlarge",
+    "ml.g6e.4xlarge"
+   ],
+   "unbilled_jobs": 3,
+   "wall_hours": 12.142
+  },
+  "imgvol-abl-no-llm-reasoning-ablation-release-a-s101": {
+   "billed_jobs": 1,
+   "gpu_hours": 2.14,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 2.671
+  },
+  "imgvol-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 1,
+   "gpu_hours": 2.158,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 2.618
+  },
+  "longtail-abl-no-llm-reasoning-ablation-release-a-s101": {
+   "billed_jobs": 2,
+   "gpu_hours": 2.281,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 3.05
+  },
+  "longtail-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 2,
+   "gpu_hours": 2.233,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 3.06
+  },
+  "longtail-abl-no-method-prior-ablation-release-b-s101": {
+   "billed_jobs": 3,
+   "gpu_hours": 2.223,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 3.069
+  },
+  "longtail-abl-no-method-prior-ablation-release-b-s202": {
+   "billed_jobs": 2,
+   "gpu_hours": 2.225,
+   "types": [
+    "ml.g5.2xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 3.037
+  },
+  "pairs-abl-no-capacity-ladder-ablation-release-a-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.703
+  },
+  "pairs-abl-no-capacity-ladder-ablation-release-a-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.643
+  },
+  "pairs-abl-no-llm-reasoning-ablation-release-a-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.512
+  },
+  "pairs-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.529
+  },
+  "pairs-abl-no-second-stages-ablation-release-b-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.253
+  },
+  "pairs-abl-no-second-stages-ablation-release-b-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 12.332
+  },
+  "segments-abl-no-capacity-ladder-ablation-release-a-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.067
+  },
+  "segments-abl-no-capacity-ladder-ablation-release-a-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.063
+  },
+  "segments-abl-no-llm-reasoning-ablation-release-a-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.051
+  },
+  "segments-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.061
+  },
+  "segments-abl-no-method-prior-ablation-release-b-s101": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.065
+  },
+  "segments-abl-no-method-prior-ablation-release-b-s202": {
+   "billed_jobs": 0,
+   "gpu_hours": 0.0,
+   "types": [],
+   "unbilled_jobs": 0,
+   "wall_hours": 6.071
+  },
+  "seqgraph-abl-no-llm-reasoning-ablation-release-a-s101": {
+   "billed_jobs": 5,
+   "gpu_hours": 0.833,
+   "types": [
+    "ml.g5.xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 1.527
+  },
+  "seqgraph-abl-no-llm-reasoning-ablation-release-a-s202": {
+   "billed_jobs": 6,
+   "gpu_hours": 0.994,
+   "types": [
+    "ml.g5.xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 1.522
+  },
+  "seqgraph-abl-no-method-prior-ablation-release-b-s101": {
+   "billed_jobs": 5,
+   "gpu_hours": 0.835,
+   "types": [
+    "ml.g5.xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 1.53
+  },
+  "seqgraph-abl-no-method-prior-ablation-release-b-s202": {
+   "billed_jobs": 5,
+   "gpu_hours": 0.831,
+   "types": [
+    "ml.g5.xlarge"
+   ],
+   "unbilled_jobs": 0,
+   "wall_hours": 1.64
+  },
+  "signal-abl-no-second-stages-ablation-release-b-s101": {
+   "billed_jobs": 4,
+   "gpu_hours": 8.666,
+   "types": [
+    "ml.g6e.2xlarge",
+    "ml.g6e.4xlarge"
+   ],
+   "unbilled_jobs": 13,
+   "wall_hours": 12.105
+  },
+  "signal-abl-no-second-stages-ablation-release-b-s202": {
+   "billed_jobs": 2,
+   "gpu_hours": 9.262,
+   "types": [
+    "ml.g6e.4xlarge"
+   ],
+   "unbilled_jobs": 14,
+   "wall_hours": 12.239
+  }
+ }
+}

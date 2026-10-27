@@ -1,0 +1,12 @@
+{
+ "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s101",
+ "cause": "The coordinator died at 2026-10-20T12:42Z while downloading the 127 GB public input archive from S3, before any training or score: the S3 response stream broke (botocore ResponseStreamingError, IncompleteRead after 92,265,650,203 of 127,407,691,051 bytes) and the downloader does not resume a broken stream.",
+ "first_terminal": null,
+ "launch_line_sha256": "1c2d154edaa9bea4932cc00c651b10e81a7a33d211773602606a3c7194dfdd15",
+ "name": "detection",
+ "recorded_at": "2026-10-20T13:16:05.918813Z",
+ "relaunch_campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s101-relaunch1",
+ "schema": "eval-run-relaunch-v1",
+ "tag": "ablation-release-a",
+ "task": "vinbigdata-chest-xray-abnormalities-detection"
+}

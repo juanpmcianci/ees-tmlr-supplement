@@ -1,0 +1,17 @@
+{
+ "derived_from": "high_eval/eval_task_metrics.csv",
+ "campaign_id": "points-eval-release-s202",
+ "wall_hours": "12.101",
+ "gpu_hours": "9.73",
+ "gpu_hours_basis": "SageMaker BillableTimeInSeconds (describe_training_job)",
+ "sagemaker_billed_jobs": "4",
+ "sagemaker_unbilled_jobs_capacity_or_stopped": "0",
+ "sagemaker_instance_types_billed": "ml.g5.8xlarge",
+ "gpu_lease_hours_incl_queue": "9.844",
+ "llm_usd": "0.029725",
+ "llm_turns": "8",
+ "llm_input_tokens": "278066",
+ "llm_output_tokens": "3837",
+ "attempts": "4",
+ "grade_count": "1"
+}

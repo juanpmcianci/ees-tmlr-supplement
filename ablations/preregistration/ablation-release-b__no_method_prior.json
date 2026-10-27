@@ -1,0 +1,140 @@
+{
+ "ablation": {
+  "component_off": "method_prior",
+  "name": "no_method_prior",
+  "schema": "engine-ablation-v1"
+ },
+ "campaign_env": [],
+ "code_dir": "<redacted-path>/code/ba3f8cc66be0-cdfaed4e",
+ "code_sha": "ba3f8cc66be06f53fa7a369892fcde00f15d1c23",
+ "denominator": 3,
+ "design_note": "rows trimmed to seqgraph, longtail and segments (the three shortest rows) before pre-registration and before any result, for cost and wall time",
+ "differs_from_release_by": "the launch argument --ablation no_method_prior and no --prior-uri/--prior-manifest-sha256",
+ "lane": "eval",
+ "llm": {
+  "model": "gpt-6-luna",
+  "provider": "openai"
+ },
+ "matrix_rows": [
+  "seqgraph",
+  "longtail",
+  "segments"
+ ],
+ "no_op_cells": [],
+ "prior": {
+  "kind": "absent: ablation no_method_prior",
+  "manifest_sha256": null,
+  "uri": null
+ },
+ "release": {
+  "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+  "tag": "eval-release"
+ },
+ "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+ "schema": "eval-run-ablation-preregistration-v1",
+ "seeds": [
+  101,
+  202
+ ],
+ "tag": "ablation-release-b",
+ "tasks": [
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_method_prior",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/stanford-covid-vaccine/private.tar.gz",
+   "answers_version": "d1ygRVfBhQ9qR8fBNXgNTO7rYZidiLSD",
+   "box": "staging",
+   "budget_seconds": 5400,
+   "campaigns": {
+    "101": {
+     "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s101",
+     "launch_line_sha256": "d36353baf863740993926c18918ab38c6b14912a21e0f21906e1f746d642e0c3"
+    },
+    "202": {
+     "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s202",
+     "launch_line_sha256": "4b9c2197a9e0db4eb38e2244eb200e44772c8740228c013c41d8df8a1084580f"
+    }
+   },
+   "cpus": "27-28",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/covid-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "NH0tj9QJNWxyM5vCT9G8jCpmGnrjeu5i",
+   "instance_map": [
+    "a100=ml.g5.xlarge,ml.g6.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "seqgraph",
+   "provision_wait_seconds": 300,
+   "rehearsal": "seqgraph-sm-dev-20261008r*: gold 0.3294",
+   "task": "stanford-covid-vaccine"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_method_prior",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/iwildcam-2019-fgvc6/private.tar.gz",
+   "answers_version": "YMk3QWJx1J1C_PxnLrFhf.18fzNUexBU",
+   "box": "staging",
+   "budget_seconds": 10800,
+   "campaigns": {
+    "101": {
+     "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s101",
+     "launch_line_sha256": "ca47a488661c8be8e22635436961706557b0773ffac7a568906caba3b78cca19"
+    },
+    "202": {
+     "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s202",
+     "launch_line_sha256": "080dedef766e902e5bf07369f51c6dcd67cd1e975b45d1e7ef80a8806d4a7196"
+    }
+   },
+   "cpus": "24-26",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/iwildcam-2019-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cxzFVM6WeSSMHZzucmEIDPiwVkzqApYE",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge",
+    "l4=ml.g6.2xlarge,ml.g5.2xlarge",
+    "t4=ml.g6.2xlarge,ml.g5.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "longtail",
+   "provision_wait_seconds": 300,
+   "rehearsal": "longtail-sm-dev-20261008r*: gold 0.4833, terminal salvage_finalized",
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_method_prior",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/predict-volcanic-eruptions-ingv-oe/private.tar.gz",
+   "answers_version": "0NgtOimelxHCQQGfz3v3G596RTwU4tdT",
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaigns": {
+    "101": {
+     "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s101",
+     "launch_line_sha256": "79aede92e0af13a576805a797d4211212ef43ebb57a0bc98462b2a56b05e7040"
+    },
+    "202": {
+     "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s202",
+     "launch_line_sha256": "d62980c5db727d546357b534bcb4530028bee8da340fb8f9a34fb53b58df266f"
+    }
+   },
+   "cpus": "10-17",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/volcano-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "segments",
+   "provision_wait_seconds": 300,
+   "rehearsal": "segments-sm-dev-20261008r*: gold 2,740,004",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  }
+ ],
+ "tree_sha256": "cdfaed4e6e1cafd83812c7aa8640d550c600cf9a84670f0893e140831a59c7e5",
+ "weights_manifest": "resolved by the launcher from the digests of the job images"
+}

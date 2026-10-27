@@ -1,0 +1,107 @@
+{
+ "ablation": {
+  "component_off": "scheduled_second_stages",
+  "name": "no_second_stages",
+  "schema": "engine-ablation-v1"
+ },
+ "campaign_env": [],
+ "code_dir": "<redacted-path>/code/ba3f8cc66be0-cdfaed4e",
+ "code_sha": "ba3f8cc66be06f53fa7a369892fcde00f15d1c23",
+ "denominator": 2,
+ "design_note": "the pairs row runs on staging2 cores 0-9 (same instance type and core count as the release row on staging cores 0-9), so it runs beside the pre-registered pairs chain",
+ "differs_from_release_by": "the launch argument --ablation no_second_stages",
+ "lane": "eval",
+ "llm": {
+  "model": "gpt-6-luna",
+  "provider": "openai"
+ },
+ "matrix_rows": [
+  "pairs",
+  "signal"
+ ],
+ "no_op_cells": [],
+ "prior": {
+  "kind": "method-only (eval-safe): strategy notes, no rated outcomes",
+  "manifest_sha256": "87036fb44c71ee482be302b4c3b08e92876067ec5fbf1f1c900b68c42ba2e202",
+  "uri": "<redacted-storage>/medium-medal/priors/method-eval-safe/87036fb4/method-prior-eval-safe-7231983f/"
+ },
+ "release": {
+  "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+  "tag": "eval-release"
+ },
+ "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+ "schema": "eval-run-ablation-preregistration-v1",
+ "seeds": [
+  101,
+  202
+ ],
+ "tag": "ablation-release-b",
+ "tasks": [
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_second_stages",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/nfl-player-contact-detection/private.tar.gz",
+   "answers_version": "kFNRZkEFFjz0904l.jeWrFEus9m9wvOT",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s101",
+     "launch_line_sha256": "9d7958e73335604923d9950c0c7260951f493d51fff696dace335e7696678ad0"
+    },
+    "202": {
+     "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s202",
+     "launch_line_sha256": "a44640f6be4f4b6a5e7eeb227474ab55a7d421c568bfc55a02315f7a0b46918e"
+    }
+   },
+   "cpus": "0-9",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/nfl-contact-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "pairs",
+   "provision_wait_seconds": 300,
+   "rehearsal": "pairs-sm-dev-20261008r*: bronze 0.7162",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_second_stages",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/hms-harmful-brain-activity-classification/private.tar.gz",
+   "answers_version": "ySr1ix.mswjWrodIk440YVfYIaYb7Okj",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s101",
+     "launch_line_sha256": "39f6e3f9b923faeb3631776f57ff6e181f0983de52e2c84d32f3f81dbac0a1a2"
+    },
+    "202": {
+     "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s202",
+     "launch_line_sha256": "b1a7e3ebc47835977fe0b046237c4808e6c6ce5dd779fb52c266a61f2b74d1b5"
+    }
+   },
+   "cpus": "30",
+   "data_property": "data property: the gain over the signal model comes from the layout of the public test index (rows per recording, order, length), not from a better model",
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/hms-brain-medal-wave-inputs-20260923/inputs/public.tar.gz",
+   "data_version": "jdS.EJqv83aDFbb9I37jgQusheR5idOh",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g6e.2xlarge",
+    "l4=ml.g6e.2xlarge",
+    "t4=ml.g6e.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "signal",
+   "provision_wait_seconds": 300,
+   "rehearsal": "hands-off rehearsal scored 0.3798 against a 0.3754 line: no medal",
+   "task": "hms-harmful-brain-activity-classification"
+  }
+ ],
+ "tree_sha256": "cdfaed4e6e1cafd83812c7aa8640d550c600cf9a84670f0893e140831a59c7e5",
+ "weights_manifest": "resolved by the launcher from the digests of the job images"
+}

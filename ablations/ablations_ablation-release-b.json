@@ -1,0 +1,456 @@
+{
+ "schema": "eval-run-ablation-tables-v1",
+ "tables": [
+  {
+   "ablation": "no_second_stages",
+   "component_off": "scheduled_second_stages",
+   "denominator": 2,
+   "no_op_cells": [],
+   "refused": [],
+   "release": {
+    "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+    "tag": "eval-release"
+   },
+   "rows": [
+    {
+     "any_medal_count": 0,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "none",
+      "none"
+     ],
+     "name": "pairs",
+     "scores": [
+      0.69608,
+      0.69648
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 33,
+        "provider_planner_turns": 33,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s101",
+       "grade_count": 1,
+       "medal": "none",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.69608,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 45,
+        "provider_planner_turns": 45,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "pairs-abl-no-second-stages-ablation-release-b-s202",
+       "grade_count": 1,
+       "medal": "none",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.69648,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "nfl-player-contact-detection"
+    },
+    {
+     "any_medal_count": 0,
+     "data_property": "data property: the gain over the signal model comes from the layout of the public test index (rows per recording, order, length), not from a better model",
+     "flags": [
+      "data_property",
+      "salvage"
+     ],
+     "medals": [
+      "none",
+      "none"
+     ],
+     "name": "signal",
+     "scores": [
+      0.48484,
+      0.52626
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 1,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 28,
+        "provider_planner_turns": 28,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s101",
+       "grade_count": 1,
+       "medal": "none",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.48484,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 1,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 2,
+        "declared_in_trace": 2,
+        "planner_transcript_turns": 17,
+        "provider_planner_turns": 17,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "signal-abl-no-second-stages-ablation-release-b-s202",
+       "grade_count": 1,
+       "medal": "none",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": true,
+       "score": 0.52626,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "salvage_finalized"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "salvage_finalized"
+     ],
+     "task": "hms-harmful-brain-activity-classification"
+    }
+   ],
+   "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+   "schema": "eval-run-ablation-results-v1",
+   "seeds": [
+    101,
+    202
+   ],
+   "tag": "ablation-release-b",
+   "totals": {
+    "data_property_tasks": [
+     "signal"
+    ],
+    "medal_seed_runs": 0,
+    "model_driven_tasks_with_a_medal_in_every_seed": 0,
+    "reportable_seed_runs": 4,
+    "seed_runs": 4,
+    "tasks_with_a_medal_in_every_seed": 0
+   }
+  },
+  {
+   "ablation": "no_method_prior",
+   "component_off": "method_prior",
+   "denominator": 3,
+   "no_op_cells": [],
+   "refused": [],
+   "release": {
+    "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+    "tag": "eval-release"
+   },
+   "rows": [
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [
+      "recovery"
+     ],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "seqgraph",
+     "scores": [
+      0.32705,
+      0.32802
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 31,
+        "provider_planner_turns": 31,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.32705,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 2,
+        "declared_in_trace": 2,
+        "planner_transcript_turns": 31,
+        "provider_planner_turns": 31,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "seqgraph-abl-no-method-prior-ablation-release-b-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": true,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.32802,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "controller_failure_finalized"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "controller_failure_finalized"
+     ],
+     "task": "stanford-covid-vaccine"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [
+      "salvage"
+     ],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "longtail",
+     "scores": [
+      0.45875,
+      0.52884
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 21,
+        "provider_planner_turns": 21,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": true,
+       "score": 0.45875,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "salvage_finalized"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 28,
+        "provider_planner_turns": 28,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "longtail-abl-no-method-prior-ablation-release-b-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.52884,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "salvage_finalized",
+      "exploration_exhausted"
+     ],
+     "task": "iwildcam-2019-fgvc6"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "segments",
+     "scores": [
+      2563387.0,
+      2674897.0
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 46,
+        "provider_planner_turns": 46,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2563387.0,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 46,
+        "provider_planner_turns": 46,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "segments-abl-no-method-prior-ablation-release-b-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2674897.0,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "predict-volcanic-eruptions-ingv-oe"
+    }
+   ],
+   "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+   "schema": "eval-run-ablation-results-v1",
+   "seeds": [
+    101,
+    202
+   ],
+   "tag": "ablation-release-b",
+   "totals": {
+    "data_property_tasks": [],
+    "medal_seed_runs": 6,
+    "model_driven_tasks_with_a_medal_in_every_seed": 3,
+    "reportable_seed_runs": 6,
+    "seed_runs": 6,
+    "tasks_with_a_medal_in_every_seed": 3
+   }
+  }
+ ],
+ "tag": "ablation-release-b"
+}

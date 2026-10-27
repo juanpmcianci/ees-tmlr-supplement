@@ -1,0 +1,17 @@
+{
+ "derived_from": "high_eval/eval_task_metrics.csv",
+ "campaign_id": "pairs-eval-release-s303",
+ "wall_hours": "12.527",
+ "gpu_hours": "0.0",
+ "gpu_hours_basis": "budget_ledger.exact_spend.gpu_s (local GPU executor or no SageMaker job)",
+ "sagemaker_billed_jobs": "",
+ "sagemaker_unbilled_jobs_capacity_or_stopped": "",
+ "sagemaker_instance_types_billed": "",
+ "gpu_lease_hours_incl_queue": "0.0",
+ "llm_usd": "0.090608",
+ "llm_turns": "27",
+ "llm_input_tokens": "829979",
+ "llm_output_tokens": "15221",
+ "attempts": "15",
+ "grade_count": "1"
+}

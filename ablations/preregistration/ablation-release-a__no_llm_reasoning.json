@@ -1,0 +1,234 @@
+{
+ "ablation": {
+  "component_off": "llm_reasoning",
+  "name": "no_llm_reasoning",
+  "schema": "engine-ablation-v1"
+ },
+ "campaign_env": [],
+ "code_dir": "<redacted-path>/code/d492c11920c4-341acbfc",
+ "code_sha": "d492c11920c48e8a320ed1effb954a6f3069f0f0",
+ "denominator": 6,
+ "differs_from_release_by": "the launch argument --ablation no_llm_reasoning",
+ "lane": "eval",
+ "llm": {
+  "model": "gpt-6-luna",
+  "provider": "openai"
+ },
+ "matrix_rows": [
+  "seqgraph",
+  "longtail",
+  "cohort",
+  "segments",
+  "pairs",
+  "detection"
+ ],
+ "no_op_cells": [],
+ "prior": {
+  "kind": "method-only (eval-safe): strategy notes, no rated outcomes",
+  "manifest_sha256": "87036fb44c71ee482be302b4c3b08e92876067ec5fbf1f1c900b68c42ba2e202",
+  "uri": "<redacted-storage>/medium-medal/priors/method-eval-safe/87036fb4/method-prior-eval-safe-7231983f/"
+ },
+ "release": {
+  "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+  "tag": "eval-release"
+ },
+ "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+ "schema": "eval-run-ablation-preregistration-v1",
+ "seeds": [
+  101,
+  202
+ ],
+ "tag": "ablation-release-a",
+ "tasks": [
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/stanford-covid-vaccine/private.tar.gz",
+   "answers_version": "d1ygRVfBhQ9qR8fBNXgNTO7rYZidiLSD",
+   "box": "staging",
+   "budget_seconds": 5400,
+   "campaigns": {
+    "101": {
+     "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "77d52bc1d298e04b0c8c353e7af5b827d30d68e4e823745da054d8a3cb35fff3"
+    },
+    "202": {
+     "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "1c5e1ed53faf363456a058f7d163002037badcef17a39cf8445312b98b08be09"
+    }
+   },
+   "cpus": "27-28",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/covid-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "NH0tj9QJNWxyM5vCT9G8jCpmGnrjeu5i",
+   "instance_map": [
+    "a100=ml.g5.xlarge,ml.g6.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "seqgraph",
+   "provision_wait_seconds": 300,
+   "rehearsal": "seqgraph-sm-dev-20261008r*: gold 0.3294",
+   "task": "stanford-covid-vaccine"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/iwildcam-2019-fgvc6/private.tar.gz",
+   "answers_version": "YMk3QWJx1J1C_PxnLrFhf.18fzNUexBU",
+   "box": "staging",
+   "budget_seconds": 10800,
+   "campaigns": {
+    "101": {
+     "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "f2bda1dc26bd50908d675313836e15e1e1af8bf2a6afd2cd4323cc5a0541b3dd"
+    },
+    "202": {
+     "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "73760b976be6a7f98572e1b477a21f3a6f797ff15745e8a0ba2001779271f7f6"
+    }
+   },
+   "cpus": "24-26",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/iwildcam-2019-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cxzFVM6WeSSMHZzucmEIDPiwVkzqApYE",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge",
+    "l4=ml.g6.2xlarge,ml.g5.2xlarge",
+    "t4=ml.g6.2xlarge,ml.g5.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "longtail",
+   "provision_wait_seconds": 300,
+   "rehearsal": "longtail-sm-dev-20261008r*: gold 0.4833, terminal salvage_finalized",
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/rsna-miccai-brain-tumor-radiogenomic-classification/private.tar.gz",
+   "answers_version": "bbGFIQwYcDjWcJY_kZyPa0ERLWgTP4Oa",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "3f2f9a22b910f30580da432256e4192bf19d8cdc4b9183b69c3fa1044b2792ec"
+    },
+    "202": {
+     "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "7e1a8a406321840f75f6e4753f4a4db15feb82cd86566954230562d3b733ccfd"
+    }
+   },
+   "cpus": "31",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/rsna-miccai-medal-wave-inputs-20260923/inputs/public.tar.gz",
+   "data_version": "pMVOiWctUxAsWMowI7v0Y7rALrNa9VeZ",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "cohort",
+   "provision_wait_seconds": 300,
+   "rehearsal": "not rehearsed hands-off (by choice): the launch row is the generated one",
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/predict-volcanic-eruptions-ingv-oe/private.tar.gz",
+   "answers_version": "0NgtOimelxHCQQGfz3v3G596RTwU4tdT",
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaigns": {
+    "101": {
+     "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "b6a84c59376a939a1fa83e380df50502a5aceb429769554caa815c2327806cee"
+    },
+    "202": {
+     "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "f6a3f450b85ad22444c26427d2c9e23116e99858062fa55af99e7a9b24440b97"
+    }
+   },
+   "cpus": "10-17",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/volcano-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "segments",
+   "provision_wait_seconds": 300,
+   "rehearsal": "segments-sm-dev-20261008r*: gold 2,740,004",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/nfl-player-contact-detection/private.tar.gz",
+   "answers_version": "kFNRZkEFFjz0904l.jeWrFEus9m9wvOT",
+   "box": "staging",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "0ac0e80344c0e6368e2ae4186daa53508f9d5125bb5a7a2857315f341d82e40d"
+    },
+    "202": {
+     "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "ab19eadc17992b5b3bc1cefa815a86941ac6d3956ceae3ac19240efc17c236c0"
+    }
+   },
+   "cpus": "0-9",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/nfl-contact-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "pairs",
+   "provision_wait_seconds": 300,
+   "rehearsal": "pairs-sm-dev-20261008r*: bronze 0.7162",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:374d1323cb7ecb63044ecf181c5e6a1a0dcaade0334e3a473520abab2ccf4089",
+   "ablation": "no_llm_reasoning",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/vinbigdata-chest-xray-abnormalities-detection/private.tar.gz",
+   "answers_version": "i4niYWbfUw3b4WfmM4yPNMNuPn9P8evi",
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s101",
+     "launch_line_sha256": "ad16ee2a92af17d5fe1803b78f685a96b3598d341788b6b22f7e30b216a3f59d"
+    },
+    "202": {
+     "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s202",
+     "launch_line_sha256": "a28668fe931a46c7c81ebe716f722ccaf28fc78b75218396acd0eb66190e0d7d"
+    }
+   },
+   "cpus": "24-25",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/vinbig-medal-wave-inputs-20260928/inputs/public.tar.gz",
+   "data_version": "YbxsJPNRaOqqSzw3aNZyfHqmtEMOB2Y5",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g5.4xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "detection",
+   "provision_wait_seconds": 900,
+   "rehearsal": "imgdet-sm-dev-20261008r1: gold 0.4256",
+   "task": "vinbigdata-chest-xray-abnormalities-detection"
+  }
+ ],
+ "tree_sha256": "341acbfc93ffd736c0ffaf97703ae23cfa222a4c381a37b5d87ac58dc368de93",
+ "weights_manifest": "resolved by the launcher from the digests of the job images"
+}

@@ -1,0 +1,697 @@
+{
+ "schema": "eval-run-ablation-tables-v1",
+ "tables": [
+  {
+   "ablation": "no_llm_reasoning",
+   "component_off": "llm_reasoning",
+   "denominator": 6,
+   "no_op_cells": [],
+   "refused": [],
+   "release": {
+    "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+    "tag": "eval-release"
+   },
+   "rows": [
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "seqgraph",
+     "scores": [
+      0.33513,
+      0.33513
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 1,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 10,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 12,
+        "scripted_planner_dispatches": 1
+       },
+       "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.33513,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 1,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 12,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 14,
+        "scripted_planner_dispatches": 1
+       },
+       "campaign_id": "seqgraph-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.33513,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "stanford-covid-vaccine"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "longtail",
+     "scores": [
+      0.47335,
+      0.49101
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 4,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 7,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.47335,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 4,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 7,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "longtail-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.49101,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "iwildcam-2019-fgvc6"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "silver",
+      "silver"
+     ],
+     "name": "cohort",
+     "scores": [
+      0.59,
+      0.59
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 2,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 5,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "silver",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.59,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 2,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 5,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "imgvol-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "silver",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.59,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "segments",
+     "scores": [
+      2646852.0,
+      2636940.0
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 28,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 32,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2646852.0,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 36,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 40,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "segments-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2636940.0,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "predict-volcanic-eruptions-ingv-oe"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "bronze",
+      "bronze"
+     ],
+     "name": "pairs",
+     "scores": [
+      0.71406,
+      0.71406
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 24,
+        "scheduled_stage_events": 15,
+        "scripted_planner_calls": 29,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "bronze",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.71406,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 2,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 2,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 24,
+        "scheduled_stage_events": 16,
+        "scripted_planner_calls": 29,
+        "scripted_planner_dispatches": 2
+       },
+       "campaign_id": "pairs-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "bronze",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.71406,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "nfl-player-contact-detection"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [
+      "relaunched"
+     ],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "detection",
+     "scores": [
+      0.43396,
+      0.4192
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 1,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 14,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 16,
+        "scripted_planner_dispatches": 1
+       },
+       "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s101-relaunch1",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": "The coordinator died at 2026-10-20T12:42Z while downloading the 127 GB public input archive from S3, before any training or score: the S3 response stream broke (botocore ResponseStreamingError, IncompleteRead after 92,265,650,203 of 127,407,691,051 bytes) and the downloader does not resume a broken stream.",
+       "relaunched": true,
+       "salvage": false,
+       "score": 0.43396,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 0,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 0,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 1,
+        "provider_planner_turns": 0,
+        "review_calls_refused": 16,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 18,
+        "scripted_planner_dispatches": 1
+       },
+       "campaign_id": "imgdet-abl-no-llm-reasoning-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.4192,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "vinbigdata-chest-xray-abnormalities-detection"
+    }
+   ],
+   "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+   "schema": "eval-run-ablation-results-v1",
+   "seeds": [
+    101,
+    202
+   ],
+   "tag": "ablation-release-a",
+   "totals": {
+    "data_property_tasks": [],
+    "medal_seed_runs": 12,
+    "model_driven_tasks_with_a_medal_in_every_seed": 6,
+    "reportable_seed_runs": 12,
+    "seed_runs": 12,
+    "tasks_with_a_medal_in_every_seed": 6
+   }
+  },
+  {
+   "ablation": "no_capacity_ladder",
+   "component_off": "capacity_ladder",
+   "denominator": 2,
+   "no_op_cells": [
+    {
+     "name": "detection",
+     "reason": "all three release seeds opened on the ladder's last rung (index 6, fasterrcnn-r50fpn-800-1fold-e12, the data-signal start) and never climbed; the switch keeps the opening rung"
+    },
+    {
+     "name": "longtail",
+     "reason": "no release attempt in any seed stands on a declared rung of the image ladder, so the ladder never climbed"
+    },
+    {
+     "name": "cohort",
+     "reason": "no operator the release ran on this row declares a ladder"
+    },
+    {
+     "name": "points",
+     "reason": "no operator the release ran on this row declares a ladder"
+    }
+   ],
+   "refused": [],
+   "release": {
+    "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+    "tag": "eval-release"
+   },
+   "rows": [
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "bronze",
+      "bronze"
+     ],
+     "name": "pairs",
+     "scores": [
+      0.71395,
+      0.71866
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 4,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 52,
+        "provider_planner_turns": 52,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 21,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "bronze",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.71395,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 5,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 44,
+        "provider_planner_turns": 44,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 21,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "bronze",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 0.71866,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "nfl-player-contact-detection"
+    },
+    {
+     "any_medal_count": 2,
+     "data_property": null,
+     "flags": [],
+     "medals": [
+      "gold",
+      "gold"
+     ],
+     "name": "segments",
+     "scores": [
+      2859117.0,
+      2733449.0
+     ],
+     "seeds": [
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 5,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 38,
+        "provider_planner_turns": 38,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s101",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2859117.0,
+       "seed": 101,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      },
+      {
+       "ablation_counts": {
+        "capacity_change_refused": 0,
+        "capacity_ladder_ablated": 6,
+        "capacity_ladder_climb": 0,
+        "capacity_ladder_start_tier": 0,
+        "council_convened": 1,
+        "declared_in_trace": 1,
+        "planner_transcript_turns": 45,
+        "provider_planner_turns": 45,
+        "review_calls_refused": 0,
+        "scheduled_stage_events": 0,
+        "scripted_planner_calls": 0,
+        "scripted_planner_dispatches": 0
+       },
+       "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s202",
+       "grade_count": 1,
+       "medal": "gold",
+       "problems": [],
+       "recovery": false,
+       "relaunch_cause": null,
+       "relaunched": false,
+       "salvage": false,
+       "score": 2733449.0,
+       "seed": 202,
+       "status": "complete",
+       "stop_reason": "exploration_exhausted"
+      }
+     ],
+     "stop_reasons": [
+      "exploration_exhausted",
+      "exploration_exhausted"
+     ],
+     "task": "predict-volcanic-eruptions-ingv-oe"
+    }
+   ],
+   "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+   "schema": "eval-run-ablation-results-v1",
+   "seeds": [
+    101,
+    202
+   ],
+   "tag": "ablation-release-a",
+   "totals": {
+    "data_property_tasks": [],
+    "medal_seed_runs": 4,
+    "model_driven_tasks_with_a_medal_in_every_seed": 2,
+    "reportable_seed_runs": 4,
+    "seed_runs": 4,
+    "tasks_with_a_medal_in_every_seed": 2
+   }
+  }
+ ],
+ "tag": "ablation-release-a"
+}

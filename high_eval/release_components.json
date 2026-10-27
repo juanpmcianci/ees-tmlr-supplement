@@ -1,0 +1,1514 @@
+{
+ "bandseg-eval-release-s101-relaunch1": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 26,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "salvage_finalized"
+ },
+ "bandseg-eval-release-s202": {
+  "highest_index": 0,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "band_record_segmentation"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 50,
+  "rungs": [
+   {
+    "attempt_id": "a1-5834",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a2-92b5",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a3-f05f",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a4-409c",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a5-d140",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a7-b892",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a8-b866",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-63a5",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "bandseg-eval-release-s303": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "band_record_segmentation"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 27,
+  "rungs": [
+   {
+    "attempt_id": "a1-acea",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a3-2e72",
+    "index": 0,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-effv2s-x2-a100",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-1e85",
+    "index": 1,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-three-trunks-x2",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a5-e0ca",
+    "index": 2,
+    "operator": "band_record_segmentation",
+    "rung": "band-unet-three-trunks-x2-plain-and-offset-mirrored",
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgdet-eval-release-s101": {
+  "highest_index": 6,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "object_detection"
+  ],
+  "opened_on_index": 6,
+  "planner_transcript_turns": 53,
+  "rungs": [
+   {
+    "attempt_id": "a1-cddd",
+    "index": 6,
+    "operator": "object_detection",
+    "rung": "fasterrcnn-r50fpn-800-1fold-e12",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-8312",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-5496",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-d2b4",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-aee3",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-6968",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-bf39",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-c75691bc02914066a44b531c",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgdet-eval-release-s202": {
+  "highest_index": 6,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "object_detection"
+  ],
+  "opened_on_index": 6,
+  "planner_transcript_turns": 58,
+  "rungs": [
+   {
+    "attempt_id": "a1-9552",
+    "index": 6,
+    "operator": "object_detection",
+    "rung": "fasterrcnn-r50fpn-800-1fold-e12",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-6797",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-b7cd",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-a235",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-caf1",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgdet-eval-release-s303": {
+  "highest_index": 6,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "object_detection"
+  ],
+  "opened_on_index": 6,
+  "planner_transcript_turns": 45,
+  "rungs": [
+   {
+    "attempt_id": "a1-fa07",
+    "index": 6,
+    "operator": "object_detection",
+    "rung": "fasterrcnn-r50fpn-800-1fold-e12",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-b781",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-b62d",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-d029",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-8ce7",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-4e17",
+    "index": null,
+    "operator": "object_detection",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgscr-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "dicom_screening_classification"
+  ],
+  "opened_on_index": null,
+  "planner_transcript_turns": 23,
+  "rungs": [
+   {
+    "attempt_id": "a1-adcf",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-3f2a",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-dd512980d2e0e568140c6723",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-1e609f3fe0d4f9ba7b756eef",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-aebfa06c5d8ffbcf1fa71bd1",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgscr-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "dicom_screening_classification"
+  ],
+  "opened_on_index": null,
+  "planner_transcript_turns": 18,
+  "rungs": [
+   {
+    "attempt_id": "a1-5417",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-9eb9",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-1e609f3fe0d4f9ba7b756eef",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-aebfa06c5d8ffbcf1fa71bd1",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgscr-eval-release-s303": {
+  "highest_index": 0,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "dicom_screening_classification"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 34,
+  "rungs": [
+   {
+    "attempt_id": "a1-5ee7",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a2-5123",
+    "index": 0,
+    "operator": "dicom_screening_classification",
+    "rung": "screening-effv2s-1536x768-a100",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-fde1",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-2aa3",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-51d6",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-a701",
+    "index": null,
+    "operator": "dicom_screening_classification",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgvol-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 23,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgvol-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 24,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "imgvol-eval-release-s303": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 23,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "longtail-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "image_finetune"
+  ],
+  "opened_on_index": null,
+  "planner_transcript_turns": 27,
+  "rungs": [
+   {
+    "attempt_id": "a1-63b0",
+    "index": null,
+    "operator": "image_finetune",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-3e8d",
+    "index": null,
+    "operator": "image_finetune",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-6679",
+    "index": null,
+    "operator": "image_finetune",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "longtail-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 29,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "salvage_finalized"
+ },
+ "longtail-eval-release-s303": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 29,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "salvage_finalized"
+ },
+ "pairs-eval-release-s101": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "pairwise_interaction",
+   "tabular_portfolio"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 35,
+  "rungs": [
+   {
+    "attempt_id": "a1-02b9",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-4c9c",
+    "index": 1,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-511-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-b02e",
+    "index": 2,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-1023-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-abcd",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-cff9",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-dfd6",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-2f30",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-16e2",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-4da3",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-696d",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "portfolio-517500fe9e2621d6d9d84b516db1c5e3",
+    "index": 0,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a12-df4f",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "pairs-eval-release-s202": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "pairwise_interaction"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 39,
+  "rungs": [
+   {
+    "attempt_id": "a1-2e48",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-3c38",
+    "index": 1,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-511-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-ce05",
+    "index": 2,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-1023-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-3650",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-4db5",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-30ae",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-5be5",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-91a2",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-f14c",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a11-f1f5",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a12-0dd3",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a13-53b0",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "pairs-eval-release-s303": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "pairwise_interaction",
+   "tabular_portfolio"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 27,
+  "rungs": [
+   {
+    "attempt_id": "a1-ef8d",
+    "index": 0,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-938c",
+    "index": 1,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-511-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-b863",
+    "index": 2,
+    "operator": "pairwise_interaction",
+    "rung": "pairwise-lgbm-1023-bag5",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-22e1",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-76d0",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-dd19",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-a315",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-a7c4",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-b973",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-21cd",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a11-7074",
+    "index": null,
+    "operator": "pairwise_interaction",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "portfolio-103a3af27da04508df509e4e4275aa93",
+    "index": 0,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu",
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "pair_temporal_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "points-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 39,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "points-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 8,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "points-eval-release-s303": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 34,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "segments-eval-release-s101": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "tabular_portfolio"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 42,
+  "rungs": [
+   {
+    "attempt_id": "a1-525d",
+    "index": 0,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-1ef2",
+    "index": 1,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-127",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-71a2",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-f754",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-1e9a",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-7f0a",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-b33f",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-ac90",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-0086",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-74f2",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a12-26ac",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a13-948f",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a14-7894",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a15-813b",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a16-f9d8",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a17-df9b",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "mutation-0b780f2808aaab4de0dda921",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-0206b9fc77e56a646218a93a",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-e3187e9ff3ec42a261c647b7",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "segments-eval-release-s202": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "tabular_portfolio"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 56,
+  "rungs": [
+   {
+    "attempt_id": "a1-d2e9",
+    "index": 0,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-27ee",
+    "index": 1,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-127",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-8eff",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-fab6",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-5ba6",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-085a",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-b5aa",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-71c6",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-9ebd",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a11-cc2f",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a12-e359",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a13-d230",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a14-d06a",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a15-0bc1",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a16-7bc7",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a17-795d",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a18-df41",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a19-03f0",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-8bbdafd41b41cf4b3d23fe9d",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "segments-eval-release-s303": {
+  "highest_index": 2,
+  "ladder_climbed": true,
+  "laddered_operators": [
+   "tabular_portfolio"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 49,
+  "rungs": [
+   {
+    "attempt_id": "a1-330b",
+    "index": 0,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-2c00",
+    "index": 1,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-127",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-94fb",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a5-deb7",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a6-6700",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a7-77ff",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a8-b2ee",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a9-8c97",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a10-8461",
+    "index": 2,
+    "operator": "tabular_portfolio",
+    "rung": "lightgbm-cpu-255",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a11-94f4",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a12-c115",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a13-7cfb",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a14-bf43",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a15-fec2",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a16-b0d0",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a17-8907",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a18-c5c0",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a19-131d",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-26eb1cba99777bebbc6ac5a7",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "mutation-ac47850ce4cdee1f7e3e1eb1",
+    "index": null,
+    "operator": "tabular_portfolio",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "seqgraph-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 36,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "seqgraph-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 31,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "exploration_exhausted"
+ },
+ "seqgraph-eval-release-s303": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 36,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "controller_failure_finalized"
+ },
+ "signal-eval-release-s101": {
+  "highest_index": 0,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "signal_window_cnn"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 20,
+  "rungs": [
+   {
+    "attempt_id": "a1-5394",
+    "index": 0,
+    "operator": "signal_window_cnn",
+    "rung": "spectrogram-effnet-convnext-kl-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a2-e1fe",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a4-72e4",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "failed"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "index_layout_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "signal-eval-release-s202": {
+  "highest_index": 0,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "signal_window_cnn"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 32,
+  "rungs": [
+   {
+    "attempt_id": "a1-3d82",
+    "index": 0,
+    "operator": "signal_window_cnn",
+    "rung": "spectrogram-effnet-convnext-kl-a100",
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a2-58b8",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a3-8832",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "index_layout_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "index_layout_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "signal-eval-release-s303": {
+  "highest_index": 0,
+  "ladder_climbed": false,
+  "laddered_operators": [
+   "signal_window_cnn"
+  ],
+  "opened_on_index": 0,
+  "planner_transcript_turns": 15,
+  "rungs": [
+   {
+    "attempt_id": "a1-0d11",
+    "index": 0,
+    "operator": "signal_window_cnn",
+    "rung": "spectrogram-effnet-convnext-kl-a100",
+    "status": "succeeded"
+   },
+   {
+    "attempt_id": "a2-5838",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "failed"
+   },
+   {
+    "attempt_id": "a3-e145",
+    "index": null,
+    "operator": "signal_window_cnn",
+    "rung": null,
+    "status": "succeeded"
+   }
+  ],
+  "stages_adopted": [
+   {
+    "library": "index_layout_stack",
+    "status": "succeeded"
+   },
+   {
+    "library": "index_layout_stack",
+    "status": "succeeded"
+   }
+  ],
+  "stop_reason": "exploration_exhausted"
+ },
+ "tracklogs-eval-release-s101": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 3,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "no_admissible_route"
+ },
+ "tracklogs-eval-release-s202": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 3,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "no_admissible_route"
+ },
+ "tracklogs-eval-release-s303": {
+  "highest_index": null,
+  "ladder_climbed": false,
+  "laddered_operators": [],
+  "opened_on_index": null,
+  "planner_transcript_turns": 3,
+  "rungs": [],
+  "stages_adopted": [],
+  "stop_reason": "no_admissible_route"
+ }
+}

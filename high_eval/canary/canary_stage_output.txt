@@ -1,0 +1,359 @@
+measured from <redacted-path>/campaigns/imgscr-sm-dev-20261008r1/workspace/imgscr-sm-dev-20261008r1/data/rsna-breast-cancer-detection/prepared/public
+SHAPE-CARD {"files":{"by_suffix":{".csv":3,".dcm":54706,"<none>":1},"model_files":0,"per_train_row":{".csv":0.0001,".dcm":1.1112,"<none>":0.0},"total_bytes":314711772228,"train_test_ratio":8.9923},"metric":"probabilistic-f1","profile":{"applicable_learned_operators":["dicom_screening_classification"
+measured from <redacted-path>/eval/public/548e88987ac5f6d0
+SHAPE-CARD {"files":{"by_suffix":{".csv":1,".json":2,".npy":240667,"<none>":1},"model_files":0,"per_train_row":{".csv":0.0001,".json":0.0001,".npy":12.8885,"<none>":0.0001},"total_bytes":448347729409,"train_test_ratio":12.2967},"metric":"global-dice","profile":{"applicable_learned_operators":["band_
+{
+ "code_dir": "<redacted-path>/code/926abe7d0c17-6ca8ec9a",
+ "launcher_budget_cap_seconds": 82800.0,
+ "notes": [
+  "CAPACITY ml.g5.2xlarge is the first choice of ['longtail', 'cohort']: the account holds one instance per type, so one of them waits or falls to its next type",
+  "CAPACITY ml.g6e.4xlarge is the first choice of ['detection', 'signal']: the account holds one instance per type, so one of them waits or falls to its next type"
+ ],
+ "plan": [
+  {
+   "box": "staging2",
+   "budget_seconds": 82800,
+   "campaign_id": "imgscr-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_screening.sh",
+   "cpus": "0-23",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.16xlarge,ml.g6e.8xlarge,ml.g6e.12xlarge"
+   ],
+   "launch_line_sha256": "866243aeb501f46c882d51e2a0b964b989d82a15fea93d3862f12d434f7e803e",
+   "launch_script": "<redacted-path>/launch_screening_s101.sh",
+   "name": "screening",
+   "notes": [
+    "82,800 s needs the 23 h campaign cap of <redacted-branch> (6e7c61c4); a tree whose launcher caps a campaign at 43,200 s refuses this row",
+    "the public tree is the raw 290 GB archive: the coordinator host needs >= 930 GB free and builds its view on the host's cores. The rehearsal had no fixed core set on a host other work was loading (about five cores on average); here it owns 24"
+   ],
+   "preflight_script": "<redacted-path>/preflight_screening_s101.sh",
+   "task": "rsna-breast-cancer-detection"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 43200,
+   "campaign_id": "pairs-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_pairs.sh",
+   "cpus": "0-9",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "88ad59ff4d60a75b4d6e5a33c1a34095ccea0749e50ad64459bf03d573449edb",
+   "launch_script": "<redacted-path>/launch_pairs_s101.sh",
+   "name": "pairs",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_pairs_s101.sh",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "box": "gpu",
+   "budget_seconds": 43200,
+   "campaign_id": "bandseg-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_bandseg.sh",
+   "cpus": "0-7",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.xlarge,ml.g6e.4xlarge"
+   ],
+   "launch_line_sha256": "96dbfe63e8bc7994d0a82c9b16f005669146e6a8a821dc2682fe41b7a2d9502a",
+   "launch_script": "<redacted-path>/launch_bandseg_s101.sh",
+   "name": "bandseg",
+   "notes": [
+    "restore of the full tree measured at 4,256 s and the view build at 1,234 s with ten cores; both come out of the 12 h budget before the first job"
+   ],
+   "preflight_script": "<redacted-path>/preflight_bandseg_s101.sh",
+   "task": "google-research-identify-contrails-reduce-global-warming"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "points-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_points.sh",
+   "cpus": "28-29",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.8xlarge,ml.g6.4xlarge"
+   ],
+   "launch_line_sha256": "27cd6d3c7bca2b3c4a54c6859d23009e20664d8b824d569d574443f7353d0dc4",
+   "launch_script": "<redacted-path>/launch_points_s101.sh",
+   "name": "points",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_points_s101.sh",
+   "task": "3d-object-detection-for-autonomous-vehicles"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "imgdet-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_detection.sh",
+   "cpus": "24-25",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g5.4xlarge"
+   ],
+   "launch_line_sha256": "71f7d540e8340f0be71d1650316d9b86694776424c57d126671c966c7eba738b",
+   "launch_script": "<redacted-path>/launch_detection_s101.sh",
+   "name": "detection",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_detection_s101.sh",
+   "task": "vinbigdata-chest-xray-abnormalities-detection"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "imgvol-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_cohort.sh",
+   "cpus": "31",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge"
+   ],
+   "launch_line_sha256": "f7639fa78ee5cc05f7aee80d8eb321b38354882123be488aac983f45be91ed1f",
+   "launch_script": "<redacted-path>/launch_cohort_s101.sh",
+   "name": "cohort",
+   "notes": [
+    "59 test patients; this held-out set has been scored three times in dev"
+   ],
+   "preflight_script": "<redacted-path>/preflight_cohort_s101.sh",
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+  },
+  {
+   "box": "staging2",
+   "budget_seconds": 43200,
+   "campaign_id": "signal-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_signal.sh",
+   "cpus": "30",
+   "data_property": "data property: the gain over the signal model comes from the layout of the public test index (rows per recording, order, length), not from a better model",
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6e.4xlarge,ml.g6e.2xlarge",
+    "l4=ml.g6e.2xlarge",
+    "t4=ml.g6e.2xlarge"
+   ],
+   "launch_line_sha256": "dbbacfb0b3c938efb2702faf0123c6cd1326b66d9e8c9814f7ef9ccec184977f",
+   "launch_script": "<redacted-path>/launch_signal_s101.sh",
+   "name": "signal",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_signal_s101.sh",
+   "task": "hms-harmful-brain-activity-classification"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaign_id": "segments-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_segments.sh",
+   "cpus": "10-17",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "e4184fb67277c9fc6405117edc18645a4c57dd8056ceffd935fc51673bf72a96",
+   "launch_script": "<redacted-path>/launch_segments_s101.sh",
+   "name": "segments",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_segments_s101.sh",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 10800,
+   "campaign_id": "longtail-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_longtail.sh",
+   "cpus": "24-26",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.2xlarge,ml.g6.2xlarge",
+    "l4=ml.g6.2xlarge,ml.g5.2xlarge",
+    "t4=ml.g6.2xlarge,ml.g5.2xlarge"
+   ],
+   "launch_line_sha256": "ec185117d3037e75ca9c0820e54bd293a24d93cbdba98d356dbe581e37f15ea5",
+   "launch_script": "<redacted-path>/launch_longtail_s101.sh",
+   "name": "longtail",
+   "notes": [
+    "the rehearsal reached its score through the in-campaign terminal salvage"
+   ],
+   "preflight_script": "<redacted-path>/preflight_longtail_s101.sh",
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 7200,
+   "campaign_id": "tracklogs-eval-release-s101",
+   "canary_mode": "cpu",
+   "canary_script": "<redacted-path>/canary_tracklogs.sh",
+   "cpus": "18-23",
+   "data_property": "data property: the answers are reconstructible from raw files shipped in the public data; not a learned model",
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "416ed8aa9123a054e164063481a150e875a88cc4eb8247f2782e9b4c873c9b0d",
+   "launch_script": "<redacted-path>/launch_tracklogs_s101.sh",
+   "name": "tracklogs",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_tracklogs_s101.sh",
+   "task": "smartphone-decimeter-2022"
+  },
+  {
+   "box": "staging",
+   "budget_seconds": 5400,
+   "campaign_id": "seqgraph-eval-release-s101",
+   "canary_mode": "gpu",
+   "canary_script": "<redacted-path>/canary_seqgraph.sh",
+   "cpus": "27-28",
+   "data_property": null,
+   "instance": "<redacted-instance>",
+   "instance_map": [
+    "a100=ml.g5.xlarge,ml.g6.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "launch_line_sha256": "7f225ea12ed5dd51a1ea26c0b1430d9b4456e66f27642a6d784a0c2a7484eb72",
+   "launch_script": "<redacted-path>/launch_seqgraph_s101.sh",
+   "name": "seqgraph",
+   "notes": [],
+   "preflight_script": "<redacted-path>/preflight_seqgraph_s101.sh",
+   "task": "stanford-covid-vaccine"
+  }
+ ],
+ "preregistration": {
+  "local": "<redacted-path>/preregistration.json",
+  "sha256": "bac602880cb504f0cab700fe9029ed1873820c165e73c7a7a061e3fab4818a29",
+  "uri": "<redacted-storage>/medium-medal-box-campaigns/eval-preregistration/eval-release/preregistration.json"
+ },
+ "print_only": false,
+ "seed": 101,
+ "seeds": [
+  101,
+  202,
+  303
+ ],
+ "stage": "canary",
+ "tag": "eval-release",
+ "tree_sha256": "6ca8ec9aa2c40bf27d36dd45d8bb9f66c71548529431ee8de66b4265fe92fe36"
+}canary screening started 2026-10-13T16:09:05Z now 2026-10-13T16:46:53Z unit inactive
+=== matched fixture 2026-10-13T16:09:05Z
+matched fixture dicom_screening_groups {}: tokens per row p50 1 / p99 1
+canary PASSED in 738s
+CANARY-DONE rc=0 2026-10-13T16:21:32Z
+ job 59259810 JOB_STATE_SUCCEEDED [('ml.g6e.16xlarge', 'Completed', 199)]
+ job 58505205 JOB_STATE_SUCCEEDED [('ml.g6e.16xlarge', 'Completed', 164)]
+ billable seconds 363
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=igns/breast-inputs-20261008/inputs/public.tar.gz#WoUopYhgZhsYw_tC9FYqaWbvz1quujR. via=dicom_screening_groups failed=[]
+reusing <redacted-path>/campaigns/pairs-sm-dev-20261008r1/workspace/pairs-sm-dev-20261008r1/data/nfl-player-contact-detection/prepared/public: its extraction marker names this pin
+canary pairs started 2026-10-13T16:09:16Z now 2026-10-13T16:46:59Z unit inactive
+=== matched fixture 2026-10-13T16:09:38Z
+matched fixture pair_timeline_runs {'test_groups': 8, 'disjoint_test_units': True}: tokens per row p50 1 / p99 1
+canary PASSED in 18s
+CANARY-DONE rc=0 2026-10-13T16:10:01Z
+ billable seconds 0
+ RECEIPT passed=True mode=cpu code=926abe7d0c17 data=-medal-wave-inputs-20260918/inputs/public.tar.gz#cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR via=pair_timeline_runs failed=[]
+canary bandseg started 2026-10-13T16:09:28Z now 2026-10-13T16:47:06Z unit inactive
+=== matched fixture 2026-10-13T16:09:28Z
+matched fixture band_record_masks {'all_bands': True}: tokens per row p50 0 / p99 0
+canary PASSED in 1046s
+CANARY-DONE rc=0 2026-10-13T16:27:00Z
+ job 50920591 JOB_STATE_SUCCEEDED [('ml.g6e.xlarge', 'Completed', 189)]
+ job 48436850 JOB_STATE_SUCCEEDED [('ml.g6e.xlarge', 'Completed', 264)]
+ billable seconds 453
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=trails-inputs-20261009-full/inputs/public.tar.gz#GPVs86gO6TkFPLv5CQtFIXXZcaZs2J9W via=band_record_masks failed=[]
+canary points started 2026-10-13T16:09:40Z now 2026-10-13T16:47:12Z unit inactive
+=== matched fixture 2026-10-13T16:09:52Z
+matched fixture point_scene_boxes {'objects_per_scene': (5, 68), 'empty_share': 0.0, 'n_train': 240, 'camera_images': True}: tokens per row p50 296 / p99 536
+canary PASSED in 746s
+CANARY-DONE rc=0 2026-10-13T16:22:21Z
+ job 06198305 JOB_STATE_SUCCEEDED [('ml.g5.8xlarge', 'Completed', 214)]
+ job 20708006 JOB_STATE_SUCCEEDED [('ml.g5.8xlarge', 'Completed', 214)]
+ billable seconds 428
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=igns/lyft3d-inputs-20261007/inputs/public.tar.gz#Sf_lGcHeUF0SBWfsSx2qTqvt4Er83PTS via=point_scene_boxes failed=[]
+canary detection started 2026-10-13T16:09:51Z now 2026-10-13T16:47:19Z unit inactive
+=== matched fixture 2026-10-13T16:09:54Z
+matched fixture detection_multi_annotator {'sealed_weights': False}: tokens per row p50 0 / p99 0
+canary PASSED in 1994s
+CANARY-DONE rc=0 2026-10-13T16:43:10Z
+ job 18526594 JOB_STATE_SUCCEEDED [('ml.g6e.4xlarge', 'Stopped', None), ('ml.g5.4xlarge', 'Completed', 219)]
+ job 05838254 JOB_STATE_FAILED [('ml.g5.4xlarge', 'Failed', 210)]
+ job 05769014 JOB_STATE_FAILED [('ml.g5.4xlarge', 'Failed', 214)]
+ job 72810832 JOB_STATE_SUCCEEDED [('ml.g5.4xlarge', 'Completed', 224)]
+ billable seconds 867
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=-medal-wave-inputs-20260928/inputs/public.tar.gz#YbxsJPNRaOqqSzw3aNZyfHqmtEMOB2Y5 via=detection_multi_annotator failed=[]
+canary cohort started 2026-10-13T16:10:03Z now 2026-10-13T16:47:25Z unit inactive
+=== matched fixture 2026-10-13T16:10:28Z
+matched fixture case_series_cohort {}: tokens per row p50 1 / p99 1
+canary PASSED in 347s
+CANARY-DONE rc=0 2026-10-13T16:16:26Z
+ job 07855894 JOB_STATE_SUCCEEDED [('ml.g5.2xlarge', 'Completed', 229)]
+ billable seconds 229
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=-medal-wave-inputs-20260923/inputs/public.tar.gz#pMVOiWctUxAsWMowI7v0Y7rALrNa9VeZ via=case_series_cohort failed=[]
+reusing <redacted-path>/campaigns/signal-sm-dev-20261011r1/workspace/signal-sm-dev-20261011r1/data/hms-harmful-brain-activity-classification/prepared/public: its extraction marker names this pin
+canary signal started 2026-10-13T16:10:15Z now 2026-10-13T16:47:32Z unit inactive
+=== matched fixture 2026-10-13T16:10:18Z
+matched fixture signal_index_layout {'n_classes': 6, 'windows_per_key': 3}: tokens per row p50 1 / p99 1
+canary PASSED in 898s
+CANARY-DONE rc=0 2026-10-13T16:25:22Z
+ job 37969034 JOB_STATE_SUCCEEDED [('ml.g6e.2xlarge', 'Completed', 174)]
+ job 08277894 JOB_STATE_SUCCEEDED [('ml.g6e.2xlarge', 'Completed', 169)]
+ billable seconds 343
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=-medal-wave-inputs-20260923/inputs/public.tar.gz#jdS.EJqv83aDFbb9I37jgQusheR5idOh via=signal_index_layout failed=[]
+reusing <redacted-path>/campaigns/segments-sm-dev-20261008r1/workspace/segments-sm-dev-20261008r1/data/predict-volcanic-eruptions-ingv-oe/prepared/public: its extraction marker names this pin
+canary segments started 2026-10-13T16:10:26Z now 2026-10-13T16:47:39Z unit inactive
+=== matched fixture 2026-10-13T16:10:29Z
+matched fixture signal_segment_regression {}: tokens per row p50 1 / p99 1
+canary PASSED in 11s
+CANARY-DONE rc=0 2026-10-13T16:10:53Z
+ billable seconds 0
+ RECEIPT passed=True mode=cpu code=926abe7d0c17 data=-medal-wave-inputs-20260918/inputs/public.tar.gz#Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn via=signal_segment_regression failed=[]
+reusing <redacted-path>/campaigns/longtail-sm-dev-20261008r1/workspace/longtail-sm-dev-20261008r1/data/iwildcam-2019-fgvc6/prepared/public: its extraction marker names this pin
+canary longtail started 2026-10-13T16:10:38Z now 2026-10-13T16:47:45Z unit inactive
+=== matched fixture 2026-10-13T16:10:42Z
+matched fixture long_tail_images {'archived': True, 'shared_id_suffixes': 1, 'repeated_test_ids': 15}: tokens per row p50 0 / p99 0
+canary PASSED in 1010s
+CANARY-DONE rc=0 2026-10-13T16:27:37Z
+ job 47934911 JOB_STATE_SUCCEEDED [('ml.g5.2xlarge', 'Completed', 224)]
+ job 47845211 JOB_STATE_SUCCEEDED [('ml.g5.2xlarge', 'Completed', 219)]
+ billable seconds 443
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=-medal-wave-inputs-20260918/inputs/public.tar.gz#cxzFVM6WeSSMHZzucmEIDPiwVkzqApYE via=long_tail_images failed=[]
+reusing <redacted-path>/campaigns/tracklogs-sm-dev-20261008r1/workspace/tracklogs-sm-dev-20261008r1/data/smartphone-decimeter-2022/prepared/public: its extraction marker names this pin
+canary tracklogs started 2026-10-13T16:10:50Z now 2026-10-13T16:47:51Z unit inactive
+=== matched fixture 2026-10-13T16:10:58Z
+matched fixture track_log_coordinates {'held_device_kinds': 5}: tokens per row p50 0 / p99 0
+canary PASSED in 4s
+CANARY-DONE rc=0 2026-10-13T16:11:05Z
+ billable seconds 0
+ RECEIPT passed=True mode=cpu code=926abe7d0c17 data=-medal-wave-inputs-20260918/inputs/public.tar.gz#q1B839_3h4QPGbIYb6kOHWnKu4qHS08J via=track_log_coordinates failed=[]
+reusing <redacted-path>/campaigns/seqgraph-sm-dev-20261008r1/workspace/seqgraph-sm-dev-20261008r1/data/stanford-covid-vaccine/prepared/public: its extraction marker names this pin
+canary seqgraph started 2026-10-13T16:11:01Z now 2026-10-13T16:47:58Z unit inactive
+=== matched fixture 2026-10-13T16:11:03Z
+matched fixture sequence_graph_positions {}: tokens per row p50 0 / p99 0
+canary PASSED in 715s
+CANARY-DONE rc=0 2026-10-13T16:23:09Z
+ job 51627862 JOB_STATE_SUCCEEDED [('ml.g5.xlarge', 'Completed', 244)]
+ job 82080400 JOB_STATE_SUCCEEDED [('ml.g5.xlarge', 'Completed', 245)]
+ billable seconds 489
+ RECEIPT passed=True mode=gpu code=926abe7d0c17 data=-medal-wave-inputs-20260918/inputs/public.tar.gz#NH0tj9QJNWxyM5vCT9G8jCpmGnrjeu5i via=sequence_graph_positions failed=[]
+

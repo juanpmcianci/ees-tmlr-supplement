@@ -1,0 +1,127 @@
+{
+ "ablation": {
+  "component_off": "capacity_ladder",
+  "name": "no_capacity_ladder",
+  "schema": "engine-ablation-v1"
+ },
+ "campaign_env": [],
+ "code_dir": "<redacted-path>/code/d492c11920c4-341acbfc",
+ "code_sha": "d492c11920c48e8a320ed1effb954a6f3069f0f0",
+ "denominator": 2,
+ "differs_from_release_by": "the launch argument --ablation no_capacity_ladder",
+ "lane": "eval",
+ "llm": {
+  "model": "gpt-6-luna",
+  "provider": "openai"
+ },
+ "matrix_rows": [
+  "pairs",
+  "segments",
+  "detection",
+  "longtail",
+  "cohort",
+  "points"
+ ],
+ "no_op_cells": [
+  {
+   "name": "detection",
+   "reason": "all three release seeds opened on the ladder's last rung (index 6, fasterrcnn-r50fpn-800-1fold-e12, the data-signal start) and never climbed; the switch keeps the opening rung"
+  },
+  {
+   "name": "longtail",
+   "reason": "no release attempt in any seed stands on a declared rung of the image ladder, so the ladder never climbed"
+  },
+  {
+   "name": "cohort",
+   "reason": "no operator the release ran on this row declares a ladder"
+  },
+  {
+   "name": "points",
+   "reason": "no operator the release ran on this row declares a ladder"
+  }
+ ],
+ "prior": {
+  "kind": "method-only (eval-safe): strategy notes, no rated outcomes",
+  "manifest_sha256": "87036fb44c71ee482be302b4c3b08e92876067ec5fbf1f1c900b68c42ba2e202",
+  "uri": "<redacted-storage>/medium-medal/priors/method-eval-safe/87036fb4/method-prior-eval-safe-7231983f/"
+ },
+ "release": {
+  "code_sha": "926abe7d0c17c767b564ee303fb7924b412f2133",
+  "tag": "eval-release"
+ },
+ "rule": "Two seeds per (ablation, task) cell, launched once each from the ablation tag; every one is reported beside the release's same seed, whatever it scores, and a cell that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch. No score is read before every campaign of the ablation is terminal. An ablation result is never added to the release count, and a record whose own evidence contradicts its switch is refused. Each cell reports its billed GPU hours and its never-placed GPU job attempts beside those of the release run of the same seed; a cell whose ablated run received less than half of the release run's billed GPU hours is reported as capacity-affected and is not read as an effect of the switch.",
+ "schema": "eval-run-ablation-preregistration-v1",
+ "seeds": [
+  101,
+  202
+ ],
+ "tag": "ablation-release-a",
+ "tasks": [
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_capacity_ladder",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/nfl-player-contact-detection/private.tar.gz",
+   "answers_version": "kFNRZkEFFjz0904l.jeWrFEus9m9wvOT",
+   "box": "staging",
+   "budget_seconds": 43200,
+   "campaigns": {
+    "101": {
+     "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s101",
+     "launch_line_sha256": "4cd6011e808af8ef9d0906e2d5d6b66fb77a1872dd7b88349320edba3b6e4bec"
+    },
+    "202": {
+     "campaign_id": "pairs-abl-no-capacity-ladder-ablation-release-a-s202",
+     "launch_line_sha256": "23a7fe0472880773c0d82a46115229eb2e146a5c2b81d5104db169a701dac7ee"
+    }
+   },
+   "cpus": "0-9",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/nfl-contact-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "pairs",
+   "provision_wait_seconds": 300,
+   "rehearsal": "pairs-sm-dev-20261008r*: bronze 0.7162",
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "a100_image": "<redacted-image>@sha256:98d45c4a204da8549278e0bb813ab4f58f1e1d6c40ff743d7c2a5b3bab742b72",
+   "ablation": "no_capacity_ladder",
+   "answers_uri": "<redacted-storage>/medium-medal-answers/predict-volcanic-eruptions-ingv-oe/private.tar.gz",
+   "answers_version": "0NgtOimelxHCQQGfz3v3G596RTwU4tdT",
+   "box": "staging",
+   "budget_seconds": 21600,
+   "campaigns": {
+    "101": {
+     "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s101",
+     "launch_line_sha256": "ec300670447122ccc632dd59a1e1b705c8580dc2a42ada276b086a11c20317fa"
+    },
+    "202": {
+     "campaign_id": "segments-abl-no-capacity-ladder-ablation-release-a-s202",
+     "launch_line_sha256": "cbc8c8e896c79cd307aa1899c4e3f644b7d691ddaa2ac25ae542dedc31fb0c7e"
+    }
+   },
+   "cpus": "10-17",
+   "data_property": null,
+   "data_uri": "<redacted-storage>/medium-medal-campaigns/volcano-medal-wave-inputs-20260918/inputs/public.tar.gz",
+   "data_version": "Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn",
+   "instance_map": [
+    "a100=ml.g6.xlarge,ml.g5.xlarge",
+    "l4=ml.g6.xlarge,ml.g5.xlarge",
+    "t4=ml.g6.xlarge,ml.g5.xlarge"
+   ],
+   "l4_image": "<redacted-image>@sha256:19f48eda1f719f37af26b58bd4a594604af8318b4e6e1aed02625f1bfeb78e04",
+   "name": "segments",
+   "provision_wait_seconds": 300,
+   "rehearsal": "segments-sm-dev-20261008r*: gold 2,740,004",
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  }
+ ],
+ "tree_sha256": "341acbfc93ffd736c0ffaf97703ae23cfa222a4c381a37b5d87ac58dc368de93",
+ "weights_manifest": "resolved by the launcher from the digests of the job images"
+}

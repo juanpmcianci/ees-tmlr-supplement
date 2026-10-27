@@ -1,0 +1,918 @@
+[
+ {
+  "run_id": "lite__aerial-cactus-identification__claude",
+  "cli": "claude",
+  "api_messages": 39,
+  "messages_by_model": {
+   "claude-fable-5-1": 31,
+   "<synthetic>": 8
+  },
+  "tokens": {
+   "input": 902,
+   "output": 73502,
+   "cache_read": 1462892,
+   "cache_write_5m": 481095,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 10.06
+ },
+ {
+  "run_id": "lite__aerial-cactus-identification__claude__r2",
+  "cli": "claude",
+  "api_messages": 49,
+  "messages_by_model": {
+   "claude-fable-5-1": 38,
+   "<synthetic>": 11
+  },
+  "tokens": {
+   "input": 1156,
+   "output": 40872,
+   "cache_read": 1483086,
+   "cache_write_5m": 449561,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 8.05
+ },
+ {
+  "run_id": "lite__aerial-cactus-identification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 58265883,
+   "cached_input_tokens": 57961748,
+   "cache_write_input_tokens": 298934,
+   "output_tokens": 181306,
+   "reasoning_output_tokens": 110128
+  },
+  "cost_usd": 0.71
+ },
+ {
+  "run_id": "lite__aptos2019-blindness-detection__claude",
+  "cli": "claude",
+  "api_messages": 104,
+  "messages_by_model": {
+   "claude-fable-5-1": 86,
+   "<synthetic>": 18
+  },
+  "tokens": {
+   "input": 1544,
+   "output": 65517,
+   "cache_read": 6358312,
+   "cache_write_5m": 476654,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 10.84
+ },
+ {
+  "run_id": "lite__aptos2019-blindness-detection__claude__r2",
+  "cli": "claude",
+  "api_messages": 84,
+  "messages_by_model": {
+   "claude-fable-5-1": 84
+  },
+  "tokens": {
+   "input": 2230,
+   "output": 75992,
+   "cache_read": 6262964,
+   "cache_write_5m": 777379,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 15.1
+ },
+ {
+  "run_id": "lite__aptos2019-blindness-detection__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 69007944,
+   "cached_input_tokens": 68688883,
+   "cache_write_input_tokens": 313713,
+   "output_tokens": 184799,
+   "reasoning_output_tokens": 104242
+  },
+  "cost_usd": 0.82
+ },
+ {
+  "run_id": "lite__denoising-dirty-documents__claude",
+  "cli": "claude",
+  "api_messages": 126,
+  "messages_by_model": {
+   "claude-fable-5-1": 116,
+   "<synthetic>": 10
+  },
+  "tokens": {
+   "input": 2074,
+   "output": 54441,
+   "cache_read": 7241259,
+   "cache_write_5m": 476874,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 10.51
+ },
+ {
+  "run_id": "lite__denoising-dirty-documents__claude__r2",
+  "cli": "claude",
+  "api_messages": 72,
+  "messages_by_model": {
+   "claude-fable-5-1": 72
+  },
+  "tokens": {
+   "input": 2124,
+   "output": 107030,
+   "cache_read": 4791833,
+   "cache_write_5m": 1901700,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 30.34
+ },
+ {
+  "run_id": "lite__denoising-dirty-documents__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 3118144,
+   "cached_input_tokens": 3012847,
+   "cache_write_input_tokens": 105135,
+   "output_tokens": 58411,
+   "reasoning_output_tokens": 42430
+  },
+  "cost_usd": 0.07
+ },
+ {
+  "run_id": "lite__dog-breed-identification__claude",
+  "cli": "claude",
+  "api_messages": 192,
+  "messages_by_model": {
+   "claude-fable-5-1": 167,
+   "<synthetic>": 25
+  },
+  "tokens": {
+   "input": 3018,
+   "output": 141160,
+   "cache_read": 24977150,
+   "cache_write_5m": 1191717,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 28.23
+ },
+ {
+  "run_id": "lite__dog-breed-identification__claude__r2",
+  "cli": "claude",
+  "api_messages": 102,
+  "messages_by_model": {
+   "claude-fable-5-1": 102
+  },
+  "tokens": {
+   "input": 3114,
+   "output": 149483,
+   "cache_read": 9510789,
+   "cache_write_5m": 2353352,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 39.3
+ },
+ {
+  "run_id": "lite__dog-breed-identification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 85240384,
+   "cached_input_tokens": 84888062,
+   "cache_write_input_tokens": 347964,
+   "output_tokens": 183361,
+   "reasoning_output_tokens": 109212
+  },
+  "cost_usd": 0.98
+ },
+ {
+  "run_id": "lite__dogs-vs-cats-redux-kernels-edition__claude",
+  "cli": "claude",
+  "api_messages": 77,
+  "messages_by_model": {
+   "claude-fable-5-1": 54,
+   "<synthetic>": 23
+  },
+  "tokens": {
+   "input": 1530,
+   "output": 99825,
+   "cache_read": 3770599,
+   "cache_write_5m": 805228,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 16.01
+ },
+ {
+  "run_id": "lite__dogs-vs-cats-redux-kernels-edition__claude__r2",
+  "cli": "claude",
+  "api_messages": 100,
+  "messages_by_model": {
+   "claude-fable-5-1": 100
+  },
+  "tokens": {
+   "input": 2750,
+   "output": 109846,
+   "cache_read": 10169901,
+   "cache_write_5m": 1847118,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 31.15
+ },
+ {
+  "run_id": "lite__dogs-vs-cats-redux-kernels-edition__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 89022137,
+   "cached_input_tokens": 88648910,
+   "cache_write_input_tokens": 366803,
+   "output_tokens": 253230,
+   "reasoning_output_tokens": 178376
+  },
+  "cost_usd": 1.06
+ },
+ {
+  "run_id": "lite__histopathologic-cancer-detection__claude",
+  "cli": "claude",
+  "api_messages": 118,
+  "messages_by_model": {
+   "claude-fable-5-1": 90,
+   "<synthetic>": 28
+  },
+  "tokens": {
+   "input": 1586,
+   "output": 56288,
+   "cache_read": 6819681,
+   "cache_write_5m": 722376,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 13.56
+ },
+ {
+  "run_id": "lite__histopathologic-cancer-detection__claude__r2",
+  "cli": "claude",
+  "api_messages": 287,
+  "messages_by_model": {
+   "claude-fable-5-1": 287
+  },
+  "tokens": {
+   "input": 5002,
+   "output": 115982,
+   "cache_read": 35565050,
+   "cache_write_5m": 2977553,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 51.96
+ },
+ {
+  "run_id": "lite__histopathologic-cancer-detection__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 99958030,
+   "cached_input_tokens": 99506408,
+   "cache_write_input_tokens": 445930,
+   "output_tokens": 288450,
+   "reasoning_output_tokens": 187356
+  },
+  "cost_usd": 1.2
+ },
+ {
+  "run_id": "lite__jigsaw-toxic-comment-classification-challenge__claude",
+  "cli": "claude",
+  "api_messages": 83,
+  "messages_by_model": {
+   "claude-fable-5-1": 50,
+   "<synthetic>": 33
+  },
+  "tokens": {
+   "input": 1206,
+   "output": 47765,
+   "cache_read": 2918730,
+   "cache_write_5m": 452920,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 8.79
+ },
+ {
+  "run_id": "lite__jigsaw-toxic-comment-classification-challenge__claude__r2",
+  "cli": "claude",
+  "api_messages": 88,
+  "messages_by_model": {
+   "claude-fable-5-1": 88
+  },
+  "tokens": {
+   "input": 2516,
+   "output": 101464,
+   "cache_read": 7480420,
+   "cache_write_5m": 1107342,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 20.81
+ },
+ {
+  "run_id": "lite__jigsaw-toxic-comment-classification-challenge__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 101220602,
+   "cached_input_tokens": 100331563,
+   "cache_write_input_tokens": 877286,
+   "output_tokens": 542926,
+   "reasoning_output_tokens": 350921
+  },
+  "cost_usd": 1.39
+ },
+ {
+  "run_id": "lite__leaf-classification__claude",
+  "cli": "claude",
+  "api_messages": 66,
+  "messages_by_model": {
+   "claude-fable-5-1": 66
+  },
+  "tokens": {
+   "input": 1818,
+   "output": 134450,
+   "cache_read": 7058365,
+   "cache_write_5m": 1453916,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 26.68
+ },
+ {
+  "run_id": "lite__leaf-classification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 108878104,
+   "cached_input_tokens": 107834537,
+   "cache_write_input_tokens": 1027026,
+   "output_tokens": 629128,
+   "reasoning_output_tokens": 461430
+  },
+  "cost_usd": 1.52
+ },
+ {
+  "run_id": "lite__mlsp-2013-birds__claude",
+  "cli": "claude",
+  "api_messages": 138,
+  "messages_by_model": {
+   "claude-fable-5-1": 127,
+   "<synthetic>": 11
+  },
+  "tokens": {
+   "input": 3764,
+   "output": 159039,
+   "cache_read": 14090268,
+   "cache_write_5m": 3149775,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 50.88
+ },
+ {
+  "run_id": "lite__mlsp-2013-birds__claude__r2",
+  "cli": "claude",
+  "api_messages": 155,
+  "messages_by_model": {
+   "claude-fable-5-1": 155
+  },
+  "tokens": {
+   "input": 4420,
+   "output": 269035,
+   "cache_read": 32805608,
+   "cache_write_5m": 3908810,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 70.56
+ },
+ {
+  "run_id": "lite__mlsp-2013-birds__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 216694684,
+   "cached_input_tokens": 214678590,
+   "cache_write_input_tokens": 1992753,
+   "output_tokens": 856268,
+   "reasoning_output_tokens": 550164
+  },
+  "cost_usd": 2.83
+ },
+ {
+  "run_id": "lite__new-york-city-taxi-fare-prediction__claude",
+  "cli": "claude",
+  "api_messages": 69,
+  "messages_by_model": {
+   "claude-fable-5-1": 59,
+   "<synthetic>": 10
+  },
+  "tokens": {
+   "input": 1798,
+   "output": 67425,
+   "cache_read": 3704356,
+   "cache_write_5m": 563280,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 11.36
+ },
+ {
+  "run_id": "lite__new-york-city-taxi-fare-prediction__claude__r2",
+  "cli": "claude",
+  "api_messages": 126,
+  "messages_by_model": {
+   "claude-fable-5-1": 111,
+   "<synthetic>": 15
+  },
+  "tokens": {
+   "input": 3222,
+   "output": 113985,
+   "cache_read": 10376214,
+   "cache_write_5m": 2613247,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 40.99
+ },
+ {
+  "run_id": "lite__new-york-city-taxi-fare-prediction__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 148013302,
+   "cached_input_tokens": 147454501,
+   "cache_write_input_tokens": 552628,
+   "output_tokens": 257568,
+   "reasoning_output_tokens": 158009
+  },
+  "cost_usd": 1.67
+ },
+ {
+  "run_id": "lite__nomad2018-predict-transparent-conductors__claude",
+  "cli": "claude",
+  "api_messages": 215,
+  "messages_by_model": {
+   "claude-fable-5-1": 205,
+   "<synthetic>": 10
+  },
+  "tokens": {
+   "input": 4258,
+   "output": 164702,
+   "cache_read": 32971753,
+   "cache_write_5m": 2308065,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 45.37
+ },
+ {
+  "run_id": "lite__nomad2018-predict-transparent-conductors__claude__r2",
+  "cli": "claude",
+  "api_messages": 105,
+  "messages_by_model": {
+   "claude-fable-5-1": 95,
+   "<synthetic>": 10
+  },
+  "tokens": {
+   "input": 2950,
+   "output": 153497,
+   "cache_read": 11910886,
+   "cache_write_5m": 2733562,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 44.85
+ },
+ {
+  "run_id": "lite__nomad2018-predict-transparent-conductors__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 136269740,
+   "cached_input_tokens": 134426869,
+   "cache_write_input_tokens": 1827134,
+   "output_tokens": 663712,
+   "reasoning_output_tokens": 422342
+  },
+  "cost_usd": 1.91
+ },
+ {
+  "run_id": "lite__plant-pathology-2020-fgvc7__claude",
+  "cli": "claude",
+  "api_messages": 235,
+  "messages_by_model": {
+   "claude-fable-5-1": 224,
+   "<synthetic>": 11
+  },
+  "tokens": {
+   "input": 4316,
+   "output": 143240,
+   "cache_read": 29991000,
+   "cache_write_5m": 3007288,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 52.29
+ },
+ {
+  "run_id": "lite__plant-pathology-2020-fgvc7__claude__r2",
+  "cli": "claude",
+  "api_messages": 90,
+  "messages_by_model": {
+   "claude-fable-5-1": 79,
+   "<synthetic>": 11
+  },
+  "tokens": {
+   "input": 1958,
+   "output": 106495,
+   "cache_read": 6815085,
+   "cache_write_5m": 1317796,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 23.52
+ },
+ {
+  "run_id": "lite__plant-pathology-2020-fgvc7__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 130383062,
+   "cached_input_tokens": 129707617,
+   "cache_write_input_tokens": 669649,
+   "output_tokens": 387834,
+   "reasoning_output_tokens": 264022
+  },
+  "cost_usd": 1.58
+ },
+ {
+  "run_id": "lite__random-acts-of-pizza__claude",
+  "cli": "claude",
+  "api_messages": 173,
+  "messages_by_model": {
+   "claude-fable-5-1": 173
+  },
+  "tokens": {
+   "input": 4222,
+   "output": 212401,
+   "cache_read": 29891769,
+   "cache_write_5m": 1665574,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 38.95
+ },
+ {
+  "run_id": "lite__random-acts-of-pizza__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 117062759,
+   "cached_input_tokens": 115050124,
+   "cache_write_input_tokens": 1989269,
+   "output_tokens": 829514,
+   "reasoning_output_tokens": 525262
+  },
+  "cost_usd": 1.82
+ },
+ {
+  "run_id": "lite__ranzcr-clip-catheter-line-classification__claude",
+  "cli": "claude",
+  "api_messages": 68,
+  "messages_by_model": {
+   "claude-fable-5-1": 57,
+   "<synthetic>": 11
+  },
+  "tokens": {
+   "input": 1570,
+   "output": 65156,
+   "cache_read": 3670521,
+   "cache_write_5m": 679165,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 12.68
+ },
+ {
+  "run_id": "lite__ranzcr-clip-catheter-line-classification__claude__r2",
+  "cli": "claude",
+  "api_messages": 83,
+  "messages_by_model": {
+   "claude-fable-5-1": 51,
+   "<synthetic>": 32
+  },
+  "tokens": {
+   "input": 1376,
+   "output": 57897,
+   "cache_read": 3507802,
+   "cache_write_5m": 258458,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 7.02
+ },
+ {
+  "run_id": "lite__ranzcr-clip-catheter-line-classification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 72425859,
+   "cached_input_tokens": 72010855,
+   "cache_write_input_tokens": 409698,
+   "output_tokens": 193036,
+   "reasoning_output_tokens": 121399
+  },
+  "cost_usd": 0.87
+ },
+ {
+  "run_id": "lite__siim-isic-melanoma-classification__claude",
+  "cli": "claude",
+  "api_messages": 55,
+  "messages_by_model": {
+   "claude-fable-5-1": 42,
+   "<synthetic>": 13
+  },
+  "tokens": {
+   "input": 1314,
+   "output": 59622,
+   "cache_read": 2299001,
+   "cache_write_5m": 424654,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 8.88
+ },
+ {
+  "run_id": "lite__siim-isic-melanoma-classification__claude__r2",
+  "cli": "claude",
+  "api_messages": 68,
+  "messages_by_model": {
+   "claude-fable-5-1": 37,
+   "<synthetic>": 31
+  },
+  "tokens": {
+   "input": 1124,
+   "output": 58095,
+   "cache_read": 2166395,
+   "cache_write_5m": 192477,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 5.86
+ },
+ {
+  "run_id": "lite__siim-isic-melanoma-classification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 136813212,
+   "cached_input_tokens": 136131193,
+   "cache_write_input_tokens": 673710,
+   "output_tokens": 287438,
+   "reasoning_output_tokens": 182257
+  },
+  "cost_usd": 1.59
+ },
+ {
+  "run_id": "lite__spooky-author-identification__claude",
+  "cli": "claude",
+  "api_messages": 51,
+  "messages_by_model": {
+   "claude-fable-5-1": 39,
+   "<synthetic>": 12
+  },
+  "tokens": {
+   "input": 1218,
+   "output": 55347,
+   "cache_read": 1563675,
+   "cache_write_5m": 827163,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 13.51
+ },
+ {
+  "run_id": "lite__spooky-author-identification__claude__r2",
+  "cli": "claude",
+  "api_messages": 56,
+  "messages_by_model": {
+   "claude-fable-5-1": 22,
+   "<synthetic>": 34
+  },
+  "tokens": {
+   "input": 674,
+   "output": 51536,
+   "cache_read": 816321,
+   "cache_write_5m": 228506,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 5.64
+ },
+ {
+  "run_id": "lite__spooky-author-identification__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 110057086,
+   "cached_input_tokens": 109331827,
+   "cache_write_input_tokens": 718490,
+   "output_tokens": 327571,
+   "reasoning_output_tokens": 180673
+  },
+  "cost_usd": 1.35
+ },
+ {
+  "run_id": "lite__tabular-playground-series-dec-2021__claude",
+  "cli": "claude",
+  "api_messages": 112,
+  "messages_by_model": {
+   "claude-fable-5-1": 99,
+   "<synthetic>": 13
+  },
+  "tokens": {
+   "input": 2042,
+   "output": 71294,
+   "cache_read": 7556567,
+   "cache_write_5m": 806192,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 15.55
+ },
+ {
+  "run_id": "lite__tabular-playground-series-dec-2021__claude__r2",
+  "cli": "claude",
+  "api_messages": 87,
+  "messages_by_model": {
+   "claude-fable-5-1": 51,
+   "<synthetic>": 36
+  },
+  "tokens": {
+   "input": 1212,
+   "output": 42938,
+   "cache_read": 2788102,
+   "cache_write_5m": 264850,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 6.17
+ },
+ {
+  "run_id": "lite__tabular-playground-series-dec-2021__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 100787896,
+   "cached_input_tokens": 99920505,
+   "cache_write_input_tokens": 855476,
+   "output_tokens": 447321,
+   "reasoning_output_tokens": 272030
+  },
+  "cost_usd": 1.33
+ },
+ {
+  "run_id": "lite__tabular-playground-series-may-2022__claude",
+  "cli": "claude",
+  "api_messages": 60,
+  "messages_by_model": {
+   "claude-fable-5-1": 24,
+   "<synthetic>": 36
+  },
+  "tokens": {
+   "input": 738,
+   "output": 40379,
+   "cache_read": 1198324,
+   "cache_write_5m": 136285,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 4.03
+ },
+ {
+  "run_id": "lite__tabular-playground-series-may-2022__claude__r2",
+  "cli": "claude",
+  "api_messages": 93,
+  "messages_by_model": {
+   "claude-fable-5-1": 58,
+   "<synthetic>": 35
+  },
+  "tokens": {
+   "input": 1676,
+   "output": 57950,
+   "cache_read": 4004407,
+   "cache_write_5m": 173857,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 6.09
+ },
+ {
+  "run_id": "lite__tabular-playground-series-may-2022__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 96226560,
+   "cached_input_tokens": 95396214,
+   "cache_write_input_tokens": 822200,
+   "output_tokens": 280687,
+   "reasoning_output_tokens": 158671
+  },
+  "cost_usd": 1.2
+ },
+ {
+  "run_id": "lite__text-normalization-challenge-english-language__claude",
+  "cli": "claude",
+  "api_messages": 46,
+  "messages_by_model": {
+   "claude-fable-5-1": 6,
+   "<synthetic>": 40
+  },
+  "tokens": {
+   "input": 162,
+   "output": 9750,
+   "cache_read": 148291,
+   "cache_write_5m": 25551,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 0.85
+ },
+ {
+  "run_id": "lite__text-normalization-challenge-english-language__claude__r2",
+  "cli": "claude",
+  "api_messages": 80,
+  "messages_by_model": {
+   "claude-fable-5-1": 52,
+   "<synthetic>": 28
+  },
+  "tokens": {
+   "input": 1604,
+   "output": 118125,
+   "cache_read": 7157806,
+   "cache_write_5m": 235503,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 10.66
+ },
+ {
+  "run_id": "lite__text-normalization-challenge-english-language__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 182084046,
+   "cached_input_tokens": 179325009,
+   "cache_write_input_tokens": 2725663,
+   "output_tokens": 1194446,
+   "reasoning_output_tokens": 834574
+  },
+  "cost_usd": 2.73
+ },
+ {
+  "run_id": "lite__text-normalization-challenge-russian-language__claude",
+  "cli": "claude",
+  "api_messages": 263,
+  "messages_by_model": {
+   "claude-fable-5-1": 263
+  },
+  "tokens": {
+   "input": 7124,
+   "output": 284266,
+   "cache_read": 70314109,
+   "cache_write_5m": 4069472,
+   "cache_write_1h": 0,
+   "web_search": 0
+  },
+  "cost_usd": 82.73
+ },
+ {
+  "run_id": "lite__text-normalization-challenge-russian-language__codex",
+  "cli": "codex",
+  "sessions": 1,
+  "tokens": {
+   "input_tokens": 93914090,
+   "cached_input_tokens": 93031608,
+   "cache_write_input_tokens": 871640,
+   "output_tokens": 543810,
+   "reasoning_output_tokens": 388059
+  },
+  "cost_usd": 1.31
+ }
+]

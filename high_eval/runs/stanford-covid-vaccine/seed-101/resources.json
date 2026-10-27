@@ -1,0 +1,17 @@
+{
+ "derived_from": "high_eval/eval_task_metrics.csv",
+ "campaign_id": "seqgraph-eval-release-s101",
+ "wall_hours": "1.53",
+ "gpu_hours": "0.831",
+ "gpu_hours_basis": "SageMaker BillableTimeInSeconds (describe_training_job)",
+ "sagemaker_billed_jobs": "5",
+ "sagemaker_unbilled_jobs_capacity_or_stopped": "0",
+ "sagemaker_instance_types_billed": "ml.g5.xlarge",
+ "gpu_lease_hours_incl_queue": "0.897",
+ "llm_usd": "0.125603",
+ "llm_turns": "36",
+ "llm_input_tokens": "1139977",
+ "llm_output_tokens": "23210",
+ "attempts": "15",
+ "grade_count": "1"
+}

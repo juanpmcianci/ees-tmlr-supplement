@@ -1,0 +1,762 @@
+{
+ "denominator": 11,
+ "refused": [],
+ "rows": [
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [
+    "salvage"
+   ],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "longtail",
+   "scores": [
+    0.36575,
+    0.45765,
+    0.41101
+   ],
+   "seeds": [
+    {
+     "campaign_id": "longtail-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.36575,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "longtail-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": true,
+     "score": 0.45765,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "salvage_finalized"
+    },
+    {
+     "campaign_id": "longtail-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": true,
+     "score": 0.41101,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "salvage_finalized"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "salvage_finalized",
+    "salvage_finalized"
+   ],
+   "task": "iwildcam-2019-fgvc6"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [
+    "recovery"
+   ],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "seqgraph",
+   "scores": [
+    0.32728,
+    0.33214,
+    0.32809
+   ],
+   "seeds": [
+    {
+     "campaign_id": "seqgraph-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.32728,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "seqgraph-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.33214,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "seqgraph-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": true,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.32809,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "controller_failure_finalized"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "controller_failure_finalized"
+   ],
+   "task": "stanford-covid-vaccine"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "segments",
+   "scores": [
+    2626042.0,
+    2613825.0,
+    2715601.0
+   ],
+   "seeds": [
+    {
+     "campaign_id": "segments-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 2626042.0,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "segments-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 2613825.0,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "segments-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 2715601.0,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "predict-volcanic-eruptions-ingv-oe"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": "data property: the answers are reconstructible from raw files shipped in the public data; not a learned model",
+   "flags": [
+    "data_property"
+   ],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "tracklogs",
+   "scores": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seeds": [
+    {
+     "campaign_id": "tracklogs-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.0,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "no_admissible_route"
+    },
+    {
+     "campaign_id": "tracklogs-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.0,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "no_admissible_route"
+    },
+    {
+     "campaign_id": "tracklogs-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.0,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "no_admissible_route"
+    }
+   ],
+   "stop_reasons": [
+    "no_admissible_route",
+    "no_admissible_route",
+    "no_admissible_route"
+   ],
+   "task": "smartphone-decimeter-2022"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "bronze",
+    "bronze",
+    "bronze"
+   ],
+   "name": "pairs",
+   "scores": [
+    0.71042,
+    0.71495,
+    0.71533
+   ],
+   "seeds": [
+    {
+     "campaign_id": "pairs-eval-release-s101",
+     "grade_count": 1,
+     "medal": "bronze",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.71042,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "pairs-eval-release-s202",
+     "grade_count": 1,
+     "medal": "bronze",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.71495,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "pairs-eval-release-s303",
+     "grade_count": 1,
+     "medal": "bronze",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.71533,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "nfl-player-contact-detection"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "silver",
+    "silver",
+    "gold"
+   ],
+   "name": "screening",
+   "scores": [
+    0.47312,
+    0.47312,
+    0.54737
+   ],
+   "seeds": [
+    {
+     "campaign_id": "imgscr-eval-release-s101",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.47312,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgscr-eval-release-s202",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.47312,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgscr-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.54737,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "rsna-breast-cancer-detection"
+  },
+  {
+   "any_medal_count": 1,
+   "data_property": null,
+   "flags": [
+    "relaunched",
+    "salvage"
+   ],
+   "medals": [
+    "silver",
+    "none",
+    "none"
+   ],
+   "name": "bandseg",
+   "scores": [
+    0.69648,
+    0.43955,
+    0.64167
+   ],
+   "seeds": [
+    {
+     "campaign_id": "bandseg-eval-release-s101-relaunch1",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": "The coordinator died at 2026-10-13T17:44Z while downloading the 323 GB public input archive from S3, before any training or score: the S3 response stream broke (botocore ResponseStreamingError, IncompleteRead after 314,179,946,390 of 322,952,451,595 bytes) and the downloader does not resume a broken stream.",
+     "relaunched": true,
+     "salvage": true,
+     "score": 0.69648,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "salvage_finalized"
+    },
+    {
+     "campaign_id": "bandseg-eval-release-s202",
+     "grade_count": 1,
+     "medal": "none",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.43955,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "bandseg-eval-release-s303",
+     "grade_count": 1,
+     "medal": "none",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.64167,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "salvage_finalized",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "google-research-identify-contrails-reduce-global-warming"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "points",
+   "scores": [
+    0.17869,
+    0.18186,
+    0.18165
+   ],
+   "seeds": [
+    {
+     "campaign_id": "points-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.17869,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "points-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.18186,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "points-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.18165,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "3d-object-detection-for-autonomous-vehicles"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "name": "detection",
+   "scores": [
+    0.43555,
+    0.43099,
+    0.41884
+   ],
+   "seeds": [
+    {
+     "campaign_id": "imgdet-eval-release-s101",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.43555,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgdet-eval-release-s202",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.43099,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgdet-eval-release-s303",
+     "grade_count": 1,
+     "medal": "gold",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.41884,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "vinbigdata-chest-xray-abnormalities-detection"
+  },
+  {
+   "any_medal_count": 3,
+   "data_property": null,
+   "flags": [],
+   "medals": [
+    "silver",
+    "silver",
+    "silver"
+   ],
+   "name": "cohort",
+   "scores": [
+    0.59,
+    0.59,
+    0.59
+   ],
+   "seeds": [
+    {
+     "campaign_id": "imgvol-eval-release-s101",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.59,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgvol-eval-release-s202",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.59,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "imgvol-eval-release-s303",
+     "grade_count": 1,
+     "medal": "silver",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.59,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "rsna-miccai-brain-tumor-radiogenomic-classification"
+  },
+  {
+   "any_medal_count": 2,
+   "data_property": "data property: the gain over the signal model comes from the layout of the public test index (rows per recording, order, length), not from a better model",
+   "flags": [
+    "data_property"
+   ],
+   "medals": [
+    "none",
+    "bronze",
+    "bronze"
+   ],
+   "name": "signal",
+   "scores": [
+    0.41207,
+    0.37228,
+    0.37511
+   ],
+   "seeds": [
+    {
+     "campaign_id": "signal-eval-release-s101",
+     "grade_count": 1,
+     "medal": "none",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.41207,
+     "seed": 101,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "signal-eval-release-s202",
+     "grade_count": 1,
+     "medal": "bronze",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.37228,
+     "seed": 202,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    },
+    {
+     "campaign_id": "signal-eval-release-s303",
+     "grade_count": 1,
+     "medal": "bronze",
+     "problems": [],
+     "recovery": false,
+     "relaunch_cause": null,
+     "relaunched": false,
+     "salvage": false,
+     "score": 0.37511,
+     "seed": 303,
+     "status": "complete",
+     "stop_reason": "exploration_exhausted"
+    }
+   ],
+   "stop_reasons": [
+    "exploration_exhausted",
+    "exploration_exhausted",
+    "exploration_exhausted"
+   ],
+   "task": "hms-harmful-brain-activity-classification"
+  }
+ ],
+ "rule": "Three seeds per task, launched once each from the frozen tag; every one of them is reported, whatever it scores, and a task that ends without a score counts as a miss for that seed. No relaunch after a score exists. A campaign that died of an infrastructure cause (capacity, quota, disk, credentials, a cloud outage) before any score was taken may be relaunched once, under a new campaign id, with the cause recorded before the relaunch; the first attempt's evidence is kept. Nothing is salvaged, re-finalised or scored by hand. No score is read before every campaign of the seed is terminal. Results labelled as a data property are reported in their own row and are not added to the model-driven count.",
+ "schema": "eval-run-results-v1",
+ "seeds": [
+  101,
+  202,
+  303
+ ],
+ "tag": "eval-release",
+ "totals": {
+  "data_property_tasks": [
+   "tracklogs",
+   "signal"
+  ],
+  "medal_seed_runs": 30,
+  "model_driven_tasks_with_a_medal_in_every_seed": 8,
+  "reportable_seed_runs": 33,
+  "seed_runs": 33,
+  "tasks_with_a_medal_in_every_seed": 9
+ }
+}

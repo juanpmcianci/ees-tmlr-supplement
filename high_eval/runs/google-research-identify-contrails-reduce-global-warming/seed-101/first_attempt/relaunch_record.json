@@ -1,0 +1,12 @@
+{
+ "campaign_id": "bandseg-eval-release-s101",
+ "cause": "The coordinator died at 2026-10-13T17:44Z while downloading the 323 GB public input archive from S3, before any training or score: the S3 response stream broke (botocore ResponseStreamingError, IncompleteRead after 314,179,946,390 of 322,952,451,595 bytes) and the downloader does not resume a broken stream.",
+ "first_terminal": null,
+ "launch_line_sha256": "1d5ac307bd290d9cc5f1ec5380d7a3c3b806fa4b447271a279076b3b8f803631",
+ "name": "bandseg",
+ "recorded_at": "2026-10-14T21:03:25.914556Z",
+ "relaunch_campaign_id": "bandseg-eval-release-s101-relaunch1",
+ "schema": "eval-run-relaunch-v1",
+ "tag": "eval-release",
+ "task": "google-research-identify-contrails-reduce-global-warming"
+}

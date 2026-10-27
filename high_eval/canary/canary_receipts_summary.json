@@ -1,0 +1,127 @@
+{
+ "schema": "canary-receipt-summary-v1",
+ "what": "one data-bound shape canary per launched High task, run from the frozen release tree before any seed was launched; parsed from canary_stage_output.txt and preflight_stage_output.txt in this folder",
+ "receipts": [
+  {
+   "row": "screening",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "WoUopYhgZhsYw_tC9FYqaWbvz1quujR.",
+   "fixture": "dicom_screening_groups",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "388a4d011ae4",
+   "checks_passed": 10
+  },
+  {
+   "row": "pairs",
+   "passed": true,
+   "mode": "cpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "cUyaIyxDq1WPkOHqhPNZ14oS_dMjD_SR",
+   "fixture": "pair_timeline_runs",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "9d306f112192",
+   "checks_passed": 10
+  },
+  {
+   "row": "bandseg",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "GPVs86gO6TkFPLv5CQtFIXXZcaZs2J9W",
+   "fixture": "band_record_masks",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "9963b1b417e4",
+   "checks_passed": 10
+  },
+  {
+   "row": "points",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "Sf_lGcHeUF0SBWfsSx2qTqvt4Er83PTS",
+   "fixture": "point_scene_boxes",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "78e55db942f5",
+   "checks_passed": 10
+  },
+  {
+   "row": "detection",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "YbxsJPNRaOqqSzw3aNZyfHqmtEMOB2Y5",
+   "fixture": "detection_multi_annotator",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "b917e2bc003b",
+   "checks_passed": 10
+  },
+  {
+   "row": "cohort",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "pMVOiWctUxAsWMowI7v0Y7rALrNa9VeZ",
+   "fixture": "case_series_cohort",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "50203b5ef98c",
+   "checks_passed": 10
+  },
+  {
+   "row": "signal",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "jdS.EJqv83aDFbb9I37jgQusheR5idOh",
+   "fixture": "signal_index_layout",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "f16ed7ecddcb",
+   "checks_passed": 10
+  },
+  {
+   "row": "segments",
+   "passed": true,
+   "mode": "cpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "Mwx.PZbU_IEF_wxrtR9mQewjwqAHDROn",
+   "fixture": "signal_segment_regression",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "c1d53080f7cf",
+   "checks_passed": 10
+  },
+  {
+   "row": "longtail",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "cxzFVM6WeSSMHZzucmEIDPiwVkzqApYE",
+   "fixture": "long_tail_images",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "1ce6d6822114",
+   "checks_passed": 10
+  },
+  {
+   "row": "tracklogs",
+   "passed": true,
+   "mode": "cpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "q1B839_3h4QPGbIYb6kOHWnKu4qHS08J",
+   "fixture": "track_log_coordinates",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "c9d12e788093",
+   "checks_passed": 10
+  },
+  {
+   "row": "seqgraph",
+   "passed": true,
+   "mode": "gpu",
+   "code_sha12": "926abe7d0c17",
+   "data_version_id": "NH0tj9QJNWxyM5vCT9G8jCpmGnrjeu5i",
+   "fixture": "sequence_graph_positions",
+   "failed_checks": "[]",
+   "receipt_sha256_prefix": "36b3634bd327",
+   "checks_passed": 10
+  }
+ ]
+}
